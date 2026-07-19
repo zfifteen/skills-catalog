@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Skills Catalog</title>
+    <meta name="description" content="A comprehensive catalog of available AI agent skills and capabilities.">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <h1>Skills Catalog</h1>
+        <div class="controls">
+            <input type="text" id="searchInput" placeholder="Search skills by name or description..." aria-label="Search skills">
+            <select id="categorySelect" aria-label="Filter by category">
+                <option value="All">All Categories</option>
+                <!-- Categories injected dynamically -->
+            </select>
+        </div>
+    </header>
+
+    <main>
+        <div class="skills-grid" id="skillsGrid">
+            <!-- Skill cards injected here by script.js -->
+        </div>
+    </main>
+
+    <footer>
+        <p>AI Skills Catalog &mdash; Powered by Agentic Workflow</p>
+    </footer>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
