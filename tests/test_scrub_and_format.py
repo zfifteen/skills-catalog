@@ -39,6 +39,12 @@ class TestLumosScrubAndFormat(unittest.TestCase):
         self.assertIn("[REDACTED_CREDENTIAL]", scrubbed_pw)
         self.assertNotIn("MySecretPassword123", scrubbed_pw)
 
+        # JSON gotcha key-value format secret
+        raw_json = '"db_secret": "MySecretPassword123"'
+        scrubbed_json = scrub_string(raw_json)
+        self.assertIn("[REDACTED_CREDENTIAL]", scrubbed_json)
+        self.assertNotIn("MySecretPassword123", scrubbed_json)
+
     def test_markdown_formatter(self):
         init_workspace(self.test_dir)
         state = load_state(self.test_dir)

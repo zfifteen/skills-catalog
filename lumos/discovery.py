@@ -1,6 +1,7 @@
 import subprocess
 import json
 from pathlib import Path
+from .scrub import filter_dirty_files
 
 def run_git_cmd(cwd: Path, args: list) -> str:
     """Helper to safely run a git command in the target directory (preserves leading spaces)."""
@@ -15,8 +16,6 @@ def run_git_cmd(cwd: Path, args: list) -> str:
         return res.stdout.rstrip()
     except subprocess.CalledProcessError:
         return ""
-
-from .scrub import filter_dirty_files
 
 def get_git_info(cwd: Path) -> dict:
     """Gathers commit SHA, branch, and lists of staged/unstaged changes."""
@@ -68,9 +67,24 @@ def match_path_rules(cwd: Path, dirty_files: list) -> dict:
     
     resolved_tests = {}
     
+    # Guard against O(N*M) lookups on huge changesets
+    if len(dirty_files) > 100:
+        return resolved_tests
+
     for file_path in dirty_files:
+        path_obj = Path(file_path)
         for match_prefix, commands in mappings.items():
-            if file_path.startswith(match_prefix):
+            prefix_path = Path(match_prefix)
+            
+            # Verify directory hierarchy containment safely
+            try:
+                # relative_to raises ValueError if path is not a child of prefix
+                path_obj.relative_to(prefix_path)
+                is_match = True
+            except ValueError:
+                is_match = False
+
+            if is_match:
                 for cmd_type, cmd in commands.items():
                     if cmd_type == "test_command":
                         resolved_tests[match_prefix] = cmd

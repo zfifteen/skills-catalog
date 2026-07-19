@@ -6,8 +6,8 @@ SECRET_REGEXES = [
     re.compile(r"(A3T[A-Z0-9]|AKIA|AGPA|AIDA|AROA|AIPA|ANPA|ANVA|ASIA)[A-Z0-9]{16}"), # AWS keys
     re.compile(r"gh[opsubr]_[0-9a-zA-Z]{36,40}"),                      # GitHub tokens
     re.compile(r"ey[a-zA-Z0-9-_]+\.ey[a-zA-Z0-9-_]+\.[a-zA-Z0-9-_]+"), # JWT tokens
-    # Generic assignments like api_key = "..." or password = '...'
-    re.compile(r"(?i)(password|passwd|secret|token|api_key|auth_key|private_key)\s*=\s*['\"][^'\"]+['\"]")
+    # Generic assignments like api_key = "..." or "password": "..." or API_KEY=token123
+    re.compile(r"(?i)(password|passwd|secret|token|api_key|auth_key|private_key)['\"]?[\s:=]+['\"]?[a-zA-Z0-9\-_]{16,}['\"]?")
 ]
 
 BLOCKED_PATTERNS = [
@@ -32,13 +32,15 @@ def scrub_string(input_str: str) -> str:
     for regex in SECRET_REGEXES[:4]:
         scrubbed = regex.sub("[REDACTED_SECRET]", scrubbed)
         
-    # Redact generic key/password assignments (preserving the key name)
+    # Redact generic key/password assignments (preserving the key name and separator)
     def assignment_replacer(match):
-        # Match groups contain key name
         full_match = match.group(0)
-        # Split on '=' to preserve 'password ='
-        parts = full_match.split("=", 1)
-        return f"{parts[0]}= '[REDACTED_CREDENTIAL]'"
+        if ":" in full_match:
+            parts = full_match.split(":", 1)
+            return f"{parts[0]}: '[REDACTED_CREDENTIAL]'"
+        else:
+            parts = full_match.split("=", 1)
+            return f"{parts[0]}= '[REDACTED_CREDENTIAL]'"
         
     scrubbed = SECRET_REGEXES[4].sub(assignment_replacer, scrubbed)
     return scrubbed

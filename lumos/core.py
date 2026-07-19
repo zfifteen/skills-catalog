@@ -1,6 +1,8 @@
 import os
 import json
 import tempfile
+import copy
+import shutil
 from pathlib import Path
 
 SCHEMA_VERSION = "1.0.0"
@@ -47,7 +49,7 @@ def init_workspace(workspace_dir: Path) -> str:
 
     state_file = get_state_file(workspace_dir)
     if not state_file.exists():
-        state = DEFAULT_STATE.copy()
+        state = copy.deepcopy(DEFAULT_STATE)
         state["project_metadata"]["name"] = workspace_dir.name
         save_state(workspace_dir, state)
 
@@ -68,7 +70,7 @@ def init_workspace(workspace_dir: Path) -> str:
         try:
             with open(gitignore, "a", encoding="utf-8") as f:
                 # Add a newline if it doesn't end with one
-                if gitignore.stat().st_size > 0:
+                if gitignore.exists() and gitignore.stat().st_size > 0:
                     f.write("\n")
                     f.write(ignore_rule + "\n")
                 else:
@@ -88,7 +90,7 @@ def load_state(workspace_dir: Path) -> dict:
         return json.load(f)
 
 def save_state(workspace_dir: Path, state_data: dict) -> None:
-    """Atomic write of workspace state to JSON."""
+    """Atomic write of workspace state to JSON with cross-device link safety."""
     lumos_dir = get_lumos_dir(workspace_dir)
     lumos_dir.mkdir(parents=True, exist_ok=True)
     state_file = get_state_file(workspace_dir)
@@ -100,12 +102,20 @@ def save_state(workspace_dir: Path, state_data: dict) -> None:
 
     try:
         os.replace(temp_name, str(state_file))
+    except OSError:
+        # Fallback to shutil.move in case of cross-device link exceptions (EXDEV)
+        try:
+            shutil.move(temp_name, str(state_file))
+        except Exception:
+            if os.path.exists(temp_name):
+                os.remove(temp_name)
+            raise
     except Exception:
-        # Cleanup temp file on failure
+        # Cleanup temp file on general failure
         if os.path.exists(temp_name):
             os.remove(temp_name)
         raise
-
+    
 def add_learning(workspace_dir: Path, path_str: str, value: str) -> dict:
     """Adds a key-value insight directly to learnings_ledger.
     path_str can look like 'logical_invariants.test_gotcha' or 'build_invariants.make'
