@@ -76,10 +76,12 @@ The state file is stored locally in the workspace. It is structured to be compac
 
 ```json
 {
+  "schema_version": "1.0.0",
   "project_metadata": {
     "name": "prime-gap-structure",
     "last_updated": "2026-07-19T11:05:00-04:00",
-    "active_branch": "feature/recursive-dni-walk"
+    "active_branch": "feature/recursive-dni-walk",
+    "git_commit_sha": "72025d481b7a69bc92ff5e1234567890abcdef12"
   },
   "workspace_map": {
     "key_paths": {
@@ -132,7 +134,19 @@ The state file is stored locally in the workspace. It is structured to be compac
 
 ---
 
-## 4. Why This Benefits ME (The Agent)
+## 4. Key CLI Commands & Usability
+
+Lumos includes several utility commands to make manual and agent interaction low-friction:
+
+*   `lumos init`: Creates the `.lumos/` directory, auto-appends `.lumos/` to the project's `.gitignore` to prevent caching state leakage, and generates default template configurations.
+*   `lumos status`: Checks cache integrity by comparing the stored `git_commit_sha` with the active shell workspace HEAD. Warns if changes have diverged, signaling potential staleness.
+*   `lumos learn "<key>: <insight>"`: Directly writes a new structured key-value gotcha or invariant into the `learnings_ledger` from the command line.
+*   `lumos save`: Serializes active branch, git diff references, and tracks agent-executed commands.
+*   `lumos load`: Outputs a clean, copy-paste-friendly Markdown block summarizing workspace state for immediate prompt ingestion.
+
+---
+
+## 5. Why This Benefits ME (The Agent)
 
 This automation is explicitly designed to benefit the agent's execution model and user-experience delivery:
 

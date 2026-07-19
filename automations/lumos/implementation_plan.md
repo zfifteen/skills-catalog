@@ -22,12 +22,13 @@ Lumos is a client-side python automation and shell-integrated daemon designed to
 ### Objectives
 
 **Primary Objective**
-- Create a lightweight, zero-dependency Python CLI tool (`lumos`) and JSON schema that automatically generates, updates, and parses `.lumos/workspace_state.json` state caches in under 500ms, injecting them into the agent's context payload.
+- Create a zero-dependency, standalone Python CLI tool (`lumos`) using Python standard libraries (`json`, `pathlib`, `argparse`, `tomllib`) that reads, updates, and validates a `.lumos/workspace_state.json` cache in under 200ms.
 
 **Secondary Objectives**
-- Implement auto-discovery routines for git status, modified file diffs, active branches, and recent shell command history.
-- Design an heuristic path mapper to link source directories with appropriate build tools and test runners (e.g. mapping `src/c/` to `make`).
-- Create seamless git hooks (`pre-commit`, `post-merge`) to trigger state serialization transparently.
+- Implement auto-discovery routines for git status, active branch, active commit HEAD SHA, and current modified file diffs.
+- Track agent-specific executed commands and exit codes (via direct tool interception or commit logs) rather than relying on noisy and fragile shell history scrapers.
+- Build a configurable rule mapper (`.lumos/rules.json`) to associate workspace directory paths with specific build/test runners, avoiding brittle hardcoded directory patterns.
+- Design a regex-based secret scrubber to intercept environment variables and credentials (with support for custom overrides via `.lumos/.secretsignore`).
 
 ---
 
@@ -37,8 +38,8 @@ Lumos is a client-side python automation and shell-integrated daemon designed to
   - Reduce initial workspace exploration token usage from an average of ~5,000 tokens to `< 1,000` tokens per session.
   - Decrease average agent exploration steps (listing directories, finding configs) from 3–5 commands to 1 command.
 - **Qualitative**:
-  - Ensure 100% of serialized state payloads validate against the schema.
-  - Prevent cache staleness by dynamically validating git commits and file modifications.
+  - Maintain a strict zero-dependency footprint for core runtime features (making external libraries like `jsonschema` optional).
+  - Prevent cache staleness by warning the user if the workspace HEAD SHA differs from the cache's recorded SHA.
 - **Validation**:
   - All unit/integration tests must pass with 0 warnings.
   - Cache payload must stay below a hard limit of `4KB` (approx. 1,000 tokens).
@@ -84,37 +85,39 @@ $$Ingest(L(S_t)) \implies S_t = S_{t+1}$$
 
 #### Phase 1: Core Serialization & Schema Engine
 - **Tasks**:
-  - Design the official `.lumos/workspace_state.json` schema.
-  - Write `lumos/core.py` to handle configuration parsing, JSON serialization, and schema validation.
-  - Create the command-line entrypoint (`lumos init` and `lumos validate`).
+  - Design the official `.lumos/workspace_state.json` schema layout.
+  - Write `lumos/core.py` to handle configuration parsing using standard `json` structure checks, eliminating mandatory `jsonschema` dependencies.
+  - Create the command-line entrypoint (`lumos init`, `lumos status`, and `lumos learn`) using the standard library `argparse` module.
+  - Auto-append `.lumos/` to `.gitignore` inside `lumos init`.
 - **Deliverables**:
   - `lumos/core.py`
-  - `lumos/schema.json`
+  - `lumos/cli.py`
   - `tests/test_core.py`
 - **Estimated Effort**: 2 days
 - **Validation**: Run pytest checking schema compliance for valid/invalid JSON configurations.
 
-#### Phase 2: Workspace Mapping & Git Integration
+#### Phase 2: Workspace Mapping, SHA Checks & Git Integration
 - **Tasks**:
-  - Implement discovery routines to parse current Git branch, dirty file list, and file diffs using `git` commands.
-  - Implement heuristic scanning of build configs (`Makefile`, `pyproject.toml`, `Cargo.toml`, `lakefile.lean`) to map directory branches to target tools.
-  - Implement shell history parser to scrape recent successful commands.
+  - Implement discovery routines to parse current Git branch, HEAD commit SHA, dirty file list, and file diffs using `git` commands.
+  - Parse rule config (`.lumos/rules.json`) to map directory branches to target tools.
+  - Implement command tracker tracking commands executed by the agent, avoiding fragile zsh/bash history scrapers.
 - **Deliverables**:
   - `lumos/discovery.py`
   - `tests/test_discovery.py`
 - **Estimated Effort**: 3 days
 - **Validation**: Verify accurate mapping on mock C, Python, and Lean repository setups.
 
-#### Phase 3: Git Hooks & Shell Aliases
+#### Phase 3: Git Hooks & Markdown Formatter
 - **Tasks**:
   - Create hook templates (`pre-commit.sh`, `post-merge.sh`) that automatically run `lumos save`.
-  - Create a setup command `lumos hook-install` to install hooks locally.
-  - Write shell aliases/wrappers to run `lumos load` on agent startup.
+  - Implement regex-based secret scrubbing targeting common high-risk key profiles (AWS, Slack, private keys) and respect `.secretsignore` rules.
+  - Implement `lumos load` markdown summary printer to display clean, prompt-ready copy-paste block text.
 - **Deliverables**:
   - `lumos/hooks/`
-  - `lumos/install.py`
+  - `lumos/scrub.py`
+  - `lumos/format.py`
 - **Estimated Effort**: 2 days
-- **Validation**: Verify that performing a git checkout or commit automatically triggers update warnings.
+- **Validation**: Verify that loading prints a valid, clean markdown state summaries.
 
 #### Phase 4: Integration & Benchmark Run
 - **Tasks**:
@@ -131,7 +134,7 @@ $$Ingest(L(S_t)) \implies S_t = S_{t+1}$$
 
 ### Tools and Technologies
 - **Languages**: Python 3
-- **Libraries**: `json`, `pathlib`, `subprocess`, `jsonschema`
+- **Libraries**: `json`, `pathlib`, `subprocess`, `argparse`, `tomllib` (Stdlib only for core runtime)
 - **Test Command**: `python3 -m pytest tests/`
 - **Doc Standard**: GitHub Flavored Markdown (GFM)
 
@@ -141,7 +144,7 @@ $$Ingest(L(S_t)) \implies S_t = S_{t+1}$$
 
 **Unit / Integration Tests**
 - `test_core.py`: Checks schema validation, file reading/writing, and error handling.
-- `test_discovery.py`: Mocks git subprocesses and shell history files to ensure safe execution outputs.
+- `test_discovery.py`: Mocks git HEAD and configuration mapping checks.
 
 **Static Analysis / Linters**
 - Linting using `ruff check` and formatting using `ruff format`.
@@ -156,9 +159,9 @@ $$Ingest(L(S_t)) \implies S_t = S_{t+1}$$
 
 | Risk | Likelihood | Impact | Mitigation |
 |:---|:---|:---|:---|
-| **Stale Cache**: Workspace layout changes but local cache is not updated. | Medium | Medium | Validate file timestamps against the cache timestamp; trigger an automatic scan if any tracked file or config is newer than the cache. |
+| **Stale Cache**: Workspace layout changes but local cache is not updated. | Medium | Medium | Validate file timestamps and the Git HEAD SHA against the cache timestamp; trigger an automatic scan if they differ. |
 | **Token Bloat**: Excessive history entries or debug logs bloat the JSON file, consuming too much context. | Low | High | Implement strict array limits (max 5 command histories, max 10 learnings) and truncate values exceeding 500 characters. |
-| **Security Leak**: Sensitive environment variables or secrets get cached in the ledger. | Low | High | Explicitly exclude files matching `.env`, `.pem`, `.git-credentials`, or lines containing secret keys/tokens. |
+| **Security Leak**: Sensitive environment variables or secrets get cached in the ledger. | Low | High | Explicitly exclude files matching `.env`, `.pem`, `.git-credentials`, or lines containing secret keys/tokens using custom regex matching and respect `.secretsignore`. |
 
 ---
 

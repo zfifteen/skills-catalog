@@ -13,8 +13,9 @@ Before starting the test suite, ensure the target testing machine has the follow
 - **Git**: version 2.20 or higher (`git --version`)
 - **Required Libraries**: Install the validation dependencies:
   ```bash
-  pip install pytest jsonschema
+  pip install pytest
   ```
+  *(Note: Lumos runs zero-dependency for core commands, so `jsonschema` must not be a hard requirement to execute standard commands).*
 
 ---
 
@@ -51,7 +52,7 @@ git commit -m "Initial commit of test repository"
 ## 3. Step-by-Step Test Cases
 
 ### Test Case 1: Initializing Lumos (`lumos init`)
-* **Objective**: Verify that Lumos creates the hidden metadata folder and seeds the initial schema files correctly.
+* **Objective**: Verify that Lumos creates the hidden metadata folder, sets up rules templates, and updates ignore rules.
 * **Tester Steps**:
   1. Navigate to `/tmp/lumos-test-repo`.
   2. Run the initialization command:
@@ -61,120 +62,93 @@ git commit -m "Initial commit of test repository"
 * **Expected Output**:
   - The CLI outputs: `Success: Initialized Lumos workspace cache at .lumos/`
   - A directory named `.lumos` is created.
-  - A file named `.lumos/workspace_state.json` exists and is populated with base metadata.
-  - A file named `.lumos/schema.json` exists.
-* **Failure Condition**: Any exit code other than `0`. Failure to create `.lumos` directory.
+  - A file named `.lumos/workspace_state.json` exists.
+  - A file named `.gitignore` exists and contains `.lumos/`.
+* **Failure Condition**: Any exit code other than `0`. Failure to write `.lumos/` to `.gitignore`.
 
 ---
 
-### Test Case 2: Workspace State Capture (`lumos save`)
-* **Objective**: Verify that Git branch, modified file lists, and recent history are accurately captured.
+### Test Case 2: Workspace State Capture & SHA Checking (`lumos status` and `save`)
+* **Objective**: Verify that Git HEAD commit SHA, branch, and status match and are verified by the status command.
 * **Tester Steps**:
-  1. Create a new branch:
+  1. Run the save command:
      ```bash
-     git checkout -b feature/test-lumos-branch
+     python3 -m lumos.cli save
      ```
   2. Modify a file in the workspace:
      ```bash
      echo '# Test modification' >> src/python/main.py
      ```
-  3. Execute a dummy command to populate the local history:
+  3. Run the status command:
      ```bash
-     make test-dummy-command-success
+     python3 -m lumos.cli status
      ```
-  4. Run the state save command:
+  4. Commit the changes and run status again:
      ```bash
-     python3 -m lumos.cli save
+     git add src/python/main.py
+     git commit -m "update code"
+     python3 -m lumos.cli status
      ```
 * **Expected Output**:
-  - The file `.lumos/workspace_state.json` contains:
-    - `"active_branch": "feature/test-lumos-branch"`
-    - `"key_paths"` mapping correctly identifying `src/python` and `src/c`.
-    - `"recent_successful_commands"` including `make test-dummy-command-success`.
-  - The json structure successfully validates against `.lumos/schema.json`.
+  - Step 1 creates a cache with the current Git commit SHA.
+  - Step 3 returns `Cache Status: Healthy` (as the active commit SHA has not changed, even with local modifications).
+  - Step 4 returns `Warning: Cache is STALE. Workspace HEAD SHA differs from cached SHA. Run 'lumos save' to refresh.`
 
 ---
 
-### Test Case 3: Invariant Preservation (The gotcha test)
-* **Objective**: Ensure manually added learnings in the `learnings_ledger` are preserved and not overwritten by subsequent auto-saves.
+### Test Case 3: Invariant Preservation & CLI Learning (`lumos learn`)
+* **Objective**: Ensure the `learn` CLI command appends gotchas correctly and does not wipe them during subsequent saves.
 * **Tester Steps**:
-  1. Open `.lumos/workspace_state.json` in an editor.
-  2. Under `"learnings_ledger" -> "build_invariants"`, append a custom key-value pair:
-     ```json
-     "test_gotcha": "Running C tests requires setting ENV_VAR=1"
+  1. Run the learn command:
+     ```bash
+     python3 -m lumos.cli learn "logical_invariants.test_gotcha: Running C tests requires setting ENV_VAR=1"
      ```
-  3. Save the file.
-  4. Modify another workspace file:
+  2. Inspect `.lumos/workspace_state.json` to verify the entry exists.
+  3. Modify another workspace file:
      ```bash
      echo '# Another modification' >> src/c/main.c
      ```
-  5. Run the save command again:
+  4. Run the save command:
      ```bash
      python3 -m lumos.cli save
      ```
-  6. Inspect `.lumos/workspace_state.json`.
+  5. Inspect `.lumos/workspace_state.json`.
 * **Expected Output**:
-  - The newly modified file `src/c/main.c` is listed in the workspace metadata change log.
-  - The manual gotcha `"test_gotcha": "Running C tests requires setting ENV_VAR=1"` remains fully intact in the ledger.
+  - The learning `test_gotcha` is written directly to `"learnings_ledger" -> "logical_invariants"`.
+  - The manual gotcha remains fully intact after the subsequent auto-save.
 
 ---
 
-### Test Case 4: Security and Secret Scrubbing
-* **Objective**: Verify that secrets, environment files, and credentials are automatically scrubbed from the history cache.
+### Test Case 4: Security and Regex Secret Scrubbing
+* **Objective**: Verify that high-risk keys and credentials are automatically scrubbed from history logs, and custom rules are respected.
 * **Tester Steps**:
   1. Create a mock secret file:
      ```bash
-     echo "API_KEY=xoxb-1234567890-abcdef" > .env
+     echo "AWS_SECRET_ACCESS_KEY=wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY" > .env
      ```
-  2. Modify a tracked file with a mock secret:
-     ```bash
-     echo "admin_password = 'SuperSecretPassword123'" >> src/python/main.py
-     ```
+  2. Add `.env` to `.lumos/.secretsignore` (or configure ignore rules).
   3. Run the save command:
      ```bash
      python3 -m lumos.cli save
      ```
   4. Open `.lumos/workspace_state.json` and search for:
-     - `.env`
-     - `xoxb-`
-     - `SuperSecretPassword123`
+     - `wJalrXUtnFEMI/K7MDENG`
 * **Expected Output**:
-  - The `.env` file must be excluded from the tracked file listings.
-  - Any commands containing sensitive strings or strings matching secret patterns must be omitted or redacted in `operational_history`.
+  - The file `.env` must not be parsed or included in the key path indexes.
+  - Any commands containing sensitive key formats must be redacted in the history list.
 
 ---
 
-### Test Case 5: State Deserialization and Injection (`lumos load`)
-* **Objective**: Verify that loading the state reads the payload, validates schema, and prints the payload in under 200ms.
+### Test Case 5: State Deserialization & Formatting (`lumos load`)
+* **Objective**: Verify that loading the state prints a clean, prompt-ready Markdown block under 200ms.
 * **Tester Steps**:
-  1. Run the load command with timing enabled:
+  1. Run the load command:
      ```bash
      time python3 -m lumos.cli load
      ```
 * **Expected Output**:
-  - The CLI outputs a clean JSON payload mapping the current state.
-  - The `real` execution time measured by the shell must be less than `0.20s` (200ms).
-  - The JSON output contains correct handoff states and tasks.
-
----
-
-### Test Case 6: Edge Cases & Robustness
-* **Objective**: Ensure Lumos degrades gracefully when run in incomplete environments.
-* **Tester Steps (Detached HEAD)**:
-  1. Checkout a detached git state:
-     ```bash
-     git checkout HEAD~1
-     ```
-  2. Run `python3 -m lumos.cli save`.
-  * **Expected Output**: `"active_branch"` is recorded as `"DETACHED_HEAD"` or the commit hash. No crash occurs.
-  
-* **Tester Steps (Non-Git Directory)**:
-  1. Navigate outside the repository:
-     ```bash
-     cd /tmp
-     ```
-  2. Run `python3 -m lumos.cli save`.
-  * **Expected Output**: The CLI terminates with code `1` and prints: `Error: Current directory is not a Git repository or initialized Lumos workspace.`
+  - The CLI outputs a clean Markdown codeblock summary representing the workspace status, branch, pending tasks, and ledger.
+  - The total execution time is under `0.20s` (200ms).
 
 ---
 
@@ -182,9 +156,8 @@ git commit -m "Initial commit of test repository"
 
 | Test ID | Title | Result (Pass/Fail) | Notes / Logs | Verified By (Initials) |
 |:---|:---|:---|:---|:---|
-| **TC-1** | Initializing Lumos (`lumos init`) | | | |
-| **TC-2** | Workspace State Capture (`save`) | | | |
-| **TC-3** | Invariant Preservation | | | |
-| **TC-4** | Security & Secret Scrubbing | | | |
-| **TC-5** | State Deserialization (`load`) | | | |
-| **TC-6** | Detached HEAD / Non-Git Errors | | | |
+| **TC-1** | Initializing Lumos & Ignore Check | | | |
+| **TC-2** | SHA Verification (`lumos status`) | | | |
+| **TC-3** | CLI Learning Command (`learn`) | | | |
+| **TC-4** | Regex Secret Scrubbing | | | |
+| **TC-5** | Prompt Markdown Format (`load`) | | | |
