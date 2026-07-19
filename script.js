@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const skillsGrid = document.getElementById('skillsGrid');
+  const skillsList = document.getElementById('skillsList');
   const searchInput = document.getElementById('searchInput');
   const categorySelect = document.getElementById('categorySelect');
 
@@ -12,30 +12,30 @@ document.addEventListener('DOMContentLoaded', () => {
     categorySelect.appendChild(option);
   });
 
-  // Render cards based on current data
-  function renderCards(data) {
-    skillsGrid.innerHTML = '';
+  // Render list items based on current data
+  function renderList(data) {
+    skillsList.innerHTML = '';
     
     if (data.length === 0) {
-      skillsGrid.innerHTML = '<p style="grid-column: 1/-1; text-align: center; color: var(--text-secondary);">No skills found matching your criteria.</p>';
+      skillsList.innerHTML = '<p style="text-align: center; color: var(--text-secondary); width: 100%; padding: 2rem 0;">No skills found matching your criteria.</p>';
       return;
     }
 
     data.forEach((skill, index) => {
-      const card = document.createElement('div');
-      card.className = 'skill-card';
+      const row = document.createElement('div');
+      row.className = 'skill-row';
       // Stagger animation delay slightly for a cascading effect
-      card.style.animationDelay = `${index * 0.05}s`;
+      row.style.animationDelay = `${index * 0.02}s`;
       
-      card.innerHTML = `
-        <div class="skill-header">
-          <h2 class="skill-title">${skill.name}</h2>
+      row.innerHTML = `
+        <div class="skill-meta">
           <span class="skill-category">${skill.category}</span>
+          <h2 class="skill-title" title="${skill.name}">${skill.name}</h2>
         </div>
         <p class="skill-description">${skill.description}</p>
-        <a href="${skill.localPath}/SKILL.md" class="skill-link" target="_blank" rel="noopener noreferrer">View Skill Path &rarr;</a>
+        <a href="${skill.localPath}/SKILL.md" class="skill-link" target="_blank" rel="noopener noreferrer">View &rarr;</a>
       `;
-      skillsGrid.appendChild(card);
+      skillsList.appendChild(row);
     });
   }
 
@@ -51,12 +51,12 @@ document.addEventListener('DOMContentLoaded', () => {
       return matchesSearch && matchesCategory;
     });
 
-    renderCards(filtered);
+    renderList(filtered);
   }
 
   searchInput.addEventListener('input', applyFilters);
   categorySelect.addEventListener('change', applyFilters);
 
   // Initial render
-  renderCards(skillsData);
+  renderList(skillsData);
 });
