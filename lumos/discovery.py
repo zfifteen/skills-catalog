@@ -17,10 +17,18 @@ def run_git_cmd(cwd: Path, args: list) -> str:
     except subprocess.CalledProcessError:
         return ""
 
+def get_git_commit_sha(cwd: Path) -> str:
+    """Helper to fetch the current HEAD commit SHA."""
+    return run_git_cmd(cwd, ["rev-parse", "HEAD"])
+
+def get_git_branch(cwd: Path) -> str:
+    """Helper to fetch the current active branch name."""
+    return run_git_cmd(cwd, ["rev-parse", "--abbrev-ref", "HEAD"]) or "DETACHED_HEAD"
+
 def get_git_info(cwd: Path) -> dict:
     """Gathers commit SHA, branch, and lists of staged/unstaged changes."""
-    sha = run_git_cmd(cwd, ["rev-parse", "HEAD"])
-    branch = run_git_cmd(cwd, ["rev-parse", "--abbrev-ref", "HEAD"]) or "DETACHED_HEAD"
+    sha = get_git_commit_sha(cwd)
+    branch = get_git_branch(cwd)
     
     # Git status parsing with -u to show individual files in untracked dirs
     status_raw = run_git_cmd(cwd, ["status", "--porcelain", "-u"])

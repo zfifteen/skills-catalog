@@ -50,7 +50,7 @@ def init_workspace(workspace_dir: Path) -> str:
     state_file = get_state_file(workspace_dir)
     if not state_file.exists():
         state = copy.deepcopy(DEFAULT_STATE)
-        state["project_metadata"]["name"] = workspace_dir.name
+        state["project_metadata"]["name"] = workspace_dir.resolve().name
         save_state(workspace_dir, state)
 
     # Auto-ignore .lumos/ in .gitignore
