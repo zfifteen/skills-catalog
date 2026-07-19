@@ -1,0 +1,8 @@
+Auto
+Chooses Fast or Expert selected=false value= y=571
+Fast
+Quick responses selected=false value= y=631
+Expert
+Thinks hard selected=false value= y=691
+Heavy
+Team of Experts selected=false value= y=750

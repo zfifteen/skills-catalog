@@ -1,0 +1,10 @@
+AXMenu|missing value pos=968,566 size=277x251
+AXMenuItem|Auto
+Chooses Fast or Expert pos=974,571 size=1178x534
+AXMenuItem|Fast
+Quick responses pos=974,631 size=1132x534
+AXMenuItem|Expert
+Thinks hard pos=974,691 size=1225x534
+AXMenuItem|Heavy
+Team of Experts pos=974,750 size=1129x534
+AXMenuButton|missing value pos=134,41 size=20x38

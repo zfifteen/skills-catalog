@@ -1,0 +1,230 @@
+App=com.apple.Safari (pid 1060)
+Window: "Rocket Chat Deployment FAQ", App: Safari.
+0 standard window Rocket Chat Deployment FAQ ID: SafariWindow?IsSecure=true&UUID=34B5B083-43A3-427D-80FD-35A1DB57CD3D, Secondary Actions: Raise
+	1 split group
+		2 tab group
+			3 container ID: BrowserView?IsPageLoaded=true&WebViewProcessID=61091
+				4 scroll area
+					5 HTML content Rocket Chat Deployment FAQ, URL: https://docs.rocket.chat/docs/deployment-faq#why-do-i-receive-a-question-about-the-unique-id-change-detected
+						6 pop up button Accessibility Menu
+						7 heading Documentation Index Value: 2
+							8 text Documentation Index
+						9 container Fetch the complete documentation index at: [https://docs.rocket.chat/llms.txt](https://docs.rocket.chat/llms.txt)
+						10 text Use this file to discover all available pages before exploring further.
+						11 container
+							12 link [Home](https://docs.rocket.chat/)
+							13 link [Skip to main content](https://docs.rocket.chat/#)
+							14 content list
+								15 link [Home](https://docs.rocket.chat/)
+								16 link [Developer](https://developer.rocket.chat/)
+								17 link [Website](https://rocket.chat/)
+								18 link [Plans and pricing](https://www.rocket.chat/pricing)
+								19 link [Contact sales](https://www.rocket.chat/sales-contact?utm_source=docs&utm_medium=nav)
+								20 link [Demo request](https://www.rocket.chat/demo-request?utm_source=docs&utm_medium=nav)
+								21 button Whats new
+							22 pop up button Theme options
+							23 container
+								24 link [Home](https://docs.rocket.chat/)
+								25 content list
+									26 container  [Documentation](https://docs.rocket.chat/docs)
+									27 container  [Resources](https://docs.rocket.chat/docs/resources)
+									28 container  [Frequently Asked Questions](https://docs.rocket.chat/docs/frequently-asked-questions)
+						29 container
+							30 button Search
+							31 button Filter
+							32 button Expand Rocket.Chat section
+							33 link [Rocket.Chat](https://docs.rocket.chat/docs/rocketchat)
+							34 button Expand Deploy Rocket.Chat section
+							35 link [Deploy Rocket.Chat](https://docs.rocket.chat/docs/deploy-rocketchat)
+							36 button Expand Configure Rocket.Chat section
+							37 link [Configure Rocket.Chat](https://docs.rocket.chat/docs/setup-and-configure)
+							38 button Expand Secure Rocket.Chat section
+							39 link [Secure Rocket.Chat](https://docs.rocket.chat/docs/secure-rocketchat)
+							40 button Expand Use Rocket.Chat section
+							41 link [Use Rocket.Chat](https://docs.rocket.chat/)
+							42 button Expand Extend and Integrate section
+							43 link [Extend and Integrate](https://docs.rocket.chat/docs/extend-and-integrate-rocketchat-capabilities)
+							44 button (expanded) Collapse Resources section
+							45 link [Resources](https://docs.rocket.chat/docs/resources)
+							46 button (expanded) Collapse Frequently Asked Questions section
+							47 link [Frequently Asked Questions](https://docs.rocket.chat/docs/frequently-asked-questions)
+							48 link [Push Notifications FAQ](https://docs.rocket.chat/docs/push-notifications-faq)
+							49 button (expanded) Collapse Deployment and Update FAQ section
+							50 link [Deployment and Update FAQ](https://docs.rocket.chat/docs/deployment-faq)
+							51 link [Docker and Podman Deployment FAQ](https://docs.rocket.chat/docs/docker-deployment-faq)
+							52 link [Kubernetes Deployment FAQ](https://docs.rocket.chat/docs/kubernetes-deployment-faq)
+							53 link [Snaps Deployment FAQ](https://docs.rocket.chat/docs/snaps-faq)
+							54 link [Support FAQ](https://docs.rocket.chat/docs/support-faqs)
+							55 button Expand Workspace FAQ section
+							56 link [Workspace FAQ](https://docs.rocket.chat/docs/workspace-faq)
+							57 button Expand License FAQ section
+							58 link [License FAQ](https://docs.rocket.chat/docs/license-faqs)
+							59 link [Omnichannel FAQ](https://docs.rocket.chat/docs/omnichannel-faqs)
+							60 button Expand Rocket.Chat Apps FAQ section
+							61 link [Rocket.Chat Apps FAQ](https://docs.rocket.chat/docs/rocketchat-apps-faq)
+							62 link [Rocket.Chat Cloud FAQ](https://docs.rocket.chat/docs/cloud-faqs)
+							63 link [Federation FAQ](https://docs.rocket.chat/docs/federation-faq)
+							64 link [Rocket.Chat Voice FAQ](https://docs.rocket.chat/docs/rocketchat-voice-faq)
+							65 link [Rocket.Chat AI FAQ](https://docs.rocket.chat/docs/rocket-chat-ai-faq)
+							66 link [Hosting FAQ](https://docs.rocket.chat/docs/hosting-faq)
+							67 button Expand Brand and Visual Guidelines section
+							68 link [Brand and Visual Guidelines](https://docs.rocket.chat/docs/brand-and-visual-guidelines)
+							69 button Expand Customer Center section
+							70 link [Customer Center](https://docs.rocket.chat/)
+							71 button Expand Release Life Cycle section
+							72 link [Release Life Cycle](https://docs.rocket.chat/docs/releaselifecycle)
+							73 link [Glossary](https://docs.rocket.chat/docs/glossary)
+							74 link [Powered by Document360 - opens in a new tab](https://document360.com/?utm_source=docs&utm_medium=footer&utm_campaign=poweredbylogo)
+							75 button (expanded) Toggle navigation panel
+						76 container
+							77 heading Deployment and Update FAQ Copy link of Deployment and Update FAQ Value: 1
+								78 text Deployment and Update FAQ
+								79 button Copy link of Deployment and Update FAQ
+							80 text UPDATED
+							81 button Export PDF
+							82 button Article more options
+							83 container Updating Rocket.Chat Copy link to Updating Rocket.Chat
+								84 summary What are the different deployment options? Value: 0
+									85 text What are the different deployment options?
+								86 button 
+								87 heading Updating Rocket.Chat Copy link to Updating Rocket.Chat Value: 2
+									88 text Updating Rocket.Chat
+									89 button Copy link to Updating Rocket.Chat
+								90 summary How do I update a Rocket.Chat deployment? Value: 0
+									91 text How do I update a Rocket.Chat deployment?
+								92 button 
+								93 summary Why am I seeing a message about a “Unique ID change detected”? Value: 0
+									94 text Why am I seeing a message about a “Unique ID change detected”?
+									95 text
+									96 text
+								97 button 
+								98 heading Updating MongoDB Copy link to Updating MongoDB Value: 2
+									99 text Updating MongoDB
+									100 button Copy link to Updating MongoDB
+								101 summary Why do I see a MongoDB deprecated warning immediately after an update? Value: 0
+									102 text Why do I see a MongoDB deprecated warning immediately after an update?
+								103 button 
+								104 summary Are there any recommendations for updating MongoDB? Value: 0
+									105 text Are there any recommendations for updating MongoDB?
+								106 button 
+								107 heading Updating desktop app Copy link to Updating desktop app Value: 2
+									108 text Updating desktop app
+									109 button Copy link to Updating desktop app
+								110 summary Why isn't my desktop app updating to version 2.17.0 or later? Value: 0
+									111 text Why isn't my desktop app updating to version 2.17.0 or later?
+									112 text
+								113 button 
+								114 heading Configuring deployments Copy link to Configuring deployments Value: 2
+									115 text Configuring deployments
+									116 button Copy link to Configuring deployments
+								117 summary SELinux blocking reverse proxy connections Value: 0
+									118 text SELinux blocking reverse proxy connections
+								119 button 
+								120 summary How do I fix an “Invalid Site URL” alert? Value: 0
+									121 text How do I fix an “Invalid Site URL” alert?
+								122 button 
+								123 text
+							124 text Was this article helpful?
+							125 button Yes
+							126 button No
+							127 button Push Notifications FAQ
+							128 button Docker and Podman Deployment FAQ
+						129 container
+							130 button Toggle content panel
+							131 text IN THIS ARTICLE
+							132 container
+								133 link [Updating Rocket.Chat](https://docs.rocket.chat/docs/deployment-faq#updating-rocketchat)
+								134 link [Updating MongoDB](https://docs.rocket.chat/docs/deployment-faq#updating-mongodb)
+								135 link [Updating desktop app](https://docs.rocket.chat/docs/deployment-faq#updating-desktop-app)
+								136 link [Configuring deployments](https://docs.rocket.chat/docs/deployment-faq#configuring-deployments)
+						137 text Rocket.Chat versions receive support for six months after release. End-of-life for any version is the last day of the month when support ends.
+						138 button scroll to top
+					139 scroll bar (settable, float) 0
+	140 image ID: WindowControlShadowView._shadowImageView
+	141 toolbar
+		142 container Secondary Actions: Name: Move next
+ Target:0x0
+ Selector:(null), Name: Remove from toolbar
+ Target:0x0
+ Selector:(null)
+			143 button show sidebar Help: Show sidebar ID: SidebarButton
+			144 menu button Description: Tab Group picker ID: TabGroupPickerButton?TabGroup=
+		145 container Secondary Actions: Name: Move previous
+ Target:0x0
+ Selector:(null), Name: Move next
+ Target:0x0
+ Selector:(null), Name: Remove from toolbar
+ Target:0x0
+ Selector:(null)
+			146 container ID: BackForwardSegmentedControl
+				147 button Go back Help: Show the previous page ID: BackButton
+				148 button (disabled) Go forward Help: Show the next page ID: ForwardButton
+		149 container Secondary Actions: Name: Move previous
+ Target:0x0
+ Selector:(null), Name: Move next
+ Target:0x0
+ Selector:(null), Name: Remove from toolbar
+ Target:0x0
+ Selector:(null)
+			150 button Page Menu ID: AssistantButton
+			151 button Add page to Reading List ID: OneStepBookmarkingButton
+			152 text field (settable, string) Description: smart search field ID: WEB_BROWSER_ADDRESS_AND_SEARCH_FIELD, Value: https://docs.rocket.chat/docs/deployment-faq#why-do-i-receive-a-question-about-the-unique-id-change-detected
+			153 button Reload this page ID: ReloadButton
+		154 button Share ID: ShareButton, Secondary Actions: Name: Move previous
+ Target:0x0
+ Selector:(null), Name: Move next
+ Target:0x0
+ Selector:(null), Name: Remove from toolbar
+ Target:0x0
+ Selector:(null)
+		155 button New Tab ID: NewTabButton, Secondary Actions: Name: Move previous
+ Target:0x0
+ Selector:(null), Name: Move next
+ Target:0x0
+ Selector:(null), Name: Remove from toolbar
+ Target:0x0
+ Selector:(null)
+		156 button Tab Overview ID: TabOverviewButton, Secondary Actions: Name: Move previous
+ Target:0x0
+ Selector:(null), Name: Remove from toolbar
+ Target:0x0
+ Selector:(null)
+	157 tab group Description: Tab bar, 5 tabs ID: TabBar?isSeparate=false
+		158 tab prime-gap-structure/PROOF.md at main · zfifteen/prime-gap-structure ID: TabBarTab?isPinned=false&isNarrow=false&isActive=false, Value: off, Secondary Actions: Name:close tab
+ Target:0xbb0c04a80
+ Selector:_close Button Clicked:
+			159 image ID: FaviconImageView
+			160 text ID: UnifiedTabBarButton._titleTextField prime-gap-structure/PROOF.md at main · zfifteen/prime-gap-structure
+		161 tab Developer Console ID: TabBarTab?isPinned=false&isNarrow=false&isActive=false, Value: off, Secondary Actions: Name:close tab
+ Target:0xbb0c07480
+ Selector:_close Button Clicked:
+			162 image ID: FaviconImageView
+			163 text ID: UnifiedTabBarButton._titleTextField Developer Console
+		164 tab Home / X ID: TabBarTab?isPinned=false&isNarrow=false&isActive=false, Value: off, Secondary Actions: Name:close tab
+ Target:0xbb0c05500
+ Selector:_close Button Clicked:
+			165 image ID: FaviconImageView
+			166 text ID: UnifiedTabBarButton._titleTextField Home / X
+		167 tab Prime-Gap-Structure - 4 unread messages - Velocity Works ID: TabBarTab?isPinned=false&isNarrow=false&isActive=false, Value: off, Secondary Actions: Name:close tab
+ Target:0xbb0f1a680
+ Selector:_close Button Clicked:
+			168 image ID: FaviconImageView
+			169 text ID: UnifiedTabBarButton._titleTextField Prime-Gap-Structure - 4 unread messages - Velocity Works
+		170 tab Rocket Chat Deployment FAQ Help: To interact with the items in this button, press Control-Option-Shift-Down Arrow. ID: TabBarTab?isPinned=false&isNarrow=false&isActive=true, Value: on, Secondary Actions: Name:close tab
+ Target:0xbb0f28000
+ Selector:_close Button Clicked:
+			171 image ID: FaviconImageView
+			172 text ID: UnifiedTabBarButton._titleTextField Rocket Chat Deployment FAQ
+	173 close button
+	174 full screen button Help: this button also has an action to zoom the window, Secondary Actions: zoom the window
+	175 minimize button
+176 menu bar
+	177 Safari
+	178 File
+	179 Edit
+	180 View ID: SafariViewMenu
+	181 History
+	182 Bookmarks ID: SafariBookmarksMenu
+	183 Develop
+	184 Window ID: SafariWindowMenu
+	185 Help ID: SafariHelpMenu

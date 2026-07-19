@@ -1,0 +1,4 @@
+interface:
+  display_name: "Most Important Issue"
+  short_description: "ROLE You are a meticulous repo analyst."
+  default_prompt: "Use $grok-task-v3-most-important-issue on the current material."

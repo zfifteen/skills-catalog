@@ -1,0 +1,4 @@
+interface:
+  display_name: "Confidence Level"
+  short_description: "You are an expert AI coding agent specialized in research-orient"
+  default_prompt: "Use $grok-task-v3-confidence-level on the current material."

@@ -1,0 +1,148 @@
+App=com.apple.Safari (pid 66661)
+Window: "Prime Gap Structure: Ordered Divisor Fields - Grok", App: Safari.
+0 standard window Prime Gap Structure: Ordered Divisor Fields - Grok ID: SafariWindow?IsSecure=true&UUID=CD51C7FE-A78F-4159-BDB3-EA77FC5229C5, Secondary Actions: Raise
+	1 split group
+		2 tab group
+			3 container ID: BrowserView?IsPageLoaded=true&WebViewProcessID=68862
+				4 scroll area
+					5 HTML content Prime Gap Structure: Ordered Divisor Fields - Grok, URL: https://grok.com/c/62149c6c-09e1-4d4f-873b-6f220cce1f33?rid=db663cec-46b4-4282-ae5a-fab3df03445c
+						6 link [Home page](https://grok.com/)
+						7 button Search
+						8 link
+						9 link
+						10 link
+						11 link
+						12 link
+						13 button History
+						14 button Toggle Sidebar
+						15 pop up button F
+						16 container
+							17 pop up button More
+							18 button Create share link
+							19 container
+								20 text In under 150 words, explain the Prime Gap Structure (PGS) project for a technical reader: what a prime gap interior is as an ordered divisor-count field, what the Gap Winner Rule (GWR) says, and one proved result (e.g. No-Later-Simpler-Composite through 10^18). Repo:
+								21 link [https://github.com/zfifteen/prime-gap-structure](https://github.com/zfifteen/prime-gap-structure)
+								22 text . No hype.
+							23 button Edit
+							24 button Copy
+							25 button Thought for 3s
+							26 container
+								27 text Prime Gap Structure (PGS)
+								28 text studies the integers between consecutive primes
+								29 text p
+								30 text and
+								31 text q
+								32 text as an ordered divisor-count field
+								33 text d(n)
+								34 text . The
+								35 text prime gap interior
+								36 text is the sequence of composite
+								37 text d(n)
+								38 text values (all >2) between
+								39 text p
+								40 text and
+								41 text q
+								42 text .
+								43 link [⁠GitHub](https://github.com/zfifteen/prime-gap-structure/blob/main/README.md)
+							44 container
+								45 text The
+								46 text Gap Winner Rule (GWR)
+								47 text states: the leftmost composite carrying the minimal
+								48 text d(n)
+								49 text in the gap is the raw-Z maximizer (via DNI:
+								50 text Z(n) = exp(-(d(n)/2 - 1) ln n)
+								51 text , primes at
+								52 text Z=1
+								53 text ) and the structurally selected interior witness.
+								54 link [⁠GitHub](https://github.com/zfifteen/prime-gap-structure/blob/main/README.md)
+							55 container
+								56 text Proved result
+								57 text : No-Later-Simpler-Composite Theorem — once the minimal
+								58 text d(n)
+								59 text appears, no simpler (lower
+								60 text d
+								61 text ) composite occurs later in the gap (zero violations through 10¹⁸).
+								62 link [⁠GitHub](https://github.com/zfifteen/prime-gap-structure)
+							63 container Repo: [https://github.com/zfifteen/prime-gap-structure](https://github.com/zfifteen/prime-gap-structure) (see PROOF.md).
+							64 button Copy
+							65 button Create share link
+							66 pop up button Like
+							67 pop up button Dislike
+							68 button Regenerate
+							69 pop up button More actions
+							70 button Explore DNI function derivation details
+							71 button Investigate Cramér's prime gap conjecture
+							72 button Define DNI acronym for clarity
+							73 container
+								74 text entry area (settable, string) Ask Grok anything
+									75 text Ask anything
+								76 pop up button Attach
+								77 pop up button Model select
+								78 button Dictation (⌃D)
+								79 button Enter voice mode (⌘⇧O)
+						80 container Notifications alt+T
+						81 text New conversation - Grok
+	82 image ID: WindowControlShadowView._shadowImageView
+	83 toolbar
+		84 container Secondary Actions: Name: Move next
+ Target:0x0
+ Selector:(null), Name: Remove from toolbar
+ Target:0x0
+ Selector:(null)
+			85 button show sidebar Help: Show sidebar ID: SidebarButton
+			86 menu button Description: Tab Group picker ID: TabGroupPickerButton?TabGroup=
+		87 container Secondary Actions: Name: Move previous
+ Target:0x0
+ Selector:(null), Name: Move next
+ Target:0x0
+ Selector:(null), Name: Remove from toolbar
+ Target:0x0
+ Selector:(null)
+			88 container ID: BackForwardSegmentedControl
+				89 button Go back Help: Show the previous page ID: BackButton
+				90 button (disabled) Go forward Help: Show the next page ID: ForwardButton
+		91 container Secondary Actions: Name: Move previous
+ Target:0x0
+ Selector:(null), Name: Move next
+ Target:0x0
+ Selector:(null), Name: Remove from toolbar
+ Target:0x0
+ Selector:(null)
+			92 button Page Menu ID: AssistantButton
+			93 button Add page to Reading List ID: OneStepBookmarkingButton
+			94 text field (settable, string) Description: smart search field ID: WEB_BROWSER_ADDRESS_AND_SEARCH_FIELD, Value: https://grok.com/c/62149c6c-09e1-4d4f-873b-6f220cce1f33?rid=db663cec-46b4-4282-ae5a-fab3df03445c
+			95 button Reload this page ID: ReloadButton
+		96 button Share ID: ShareButton, Secondary Actions: Name: Move previous
+ Target:0x0
+ Selector:(null), Name: Move next
+ Target:0x0
+ Selector:(null), Name: Remove from toolbar
+ Target:0x0
+ Selector:(null)
+		97 button New Tab ID: NewTabButton, Secondary Actions: Name: Move previous
+ Target:0x0
+ Selector:(null), Name: Move next
+ Target:0x0
+ Selector:(null), Name: Remove from toolbar
+ Target:0x0
+ Selector:(null)
+		98 button Tab Overview ID: TabOverviewButton, Secondary Actions: Name: Move previous
+ Target:0x0
+ Selector:(null), Name: Remove from toolbar
+ Target:0x0
+ Selector:(null)
+	99 close button
+	100 full screen button Help: this button also has an action to zoom the window, Secondary Actions: zoom the window
+	101 minimize button
+102 menu bar
+	103 Safari
+	104 File
+	105 Edit
+	106 View ID: SafariViewMenu
+	107 History
+	108 Bookmarks ID: SafariBookmarksMenu
+	109 Develop
+	110 Window ID: SafariWindowMenu
+	111 Help ID: SafariHelpMenu
+
+The focused UI element is 74 text entry area (settable, string) Ask Grok anything.

@@ -1,0 +1,20 @@
+
+=== click img_expert (900,373) ===
+mean pixel diff vs base 0.0732
+ax_hits [] bright_frac_under 0.0 OPEN? False
+
+=== click half_expert (450,186) ===
+mean pixel diff vs base 0.0541
+ax_hits [] bright_frac_under 0.0 OPEN? False
+
+=== click half_expert2 (470,199) ===
+mean pixel diff vs base 0.0784
+ax_hits [] bright_frac_under 0.0 OPEN? False
+
+=== click half_chevron (490,199) ===
+mean pixel diff vs base 0.0
+ax_hits [] bright_frac_under 0.0 OPEN? False
+
+=== click img_chevron (940,373) ===
+ax_hits [] bright_frac_under 0.0 OPEN? False
+done

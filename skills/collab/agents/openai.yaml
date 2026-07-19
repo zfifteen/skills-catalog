@@ -1,0 +1,4 @@
+interface:
+  display_name: "Collab"
+  short_description: "Commit before replying and append GitHub links"
+  default_prompt: "Use $collab to require commit-and-push before artifact references and to end replies with a bulleted list of GitHub links for every referenced artifact."

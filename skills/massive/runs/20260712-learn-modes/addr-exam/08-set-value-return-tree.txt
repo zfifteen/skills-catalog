@@ -1,0 +1,76 @@
+App=com.apple.Safari (pid 66661)
+Window: "Example Domain", App: Safari.
+0 standard window Example Domain ID: SafariWindow?IsSecure=true&UUID=CD51C7FE-A78F-4159-BDB3-EA77FC5229C5, Secondary Actions: Raise
+	1 split group
+		2 tab group
+			3 container ID: BrowserView?IsPageLoaded=true&WebViewProcessID=68763
+				4 scroll area
+					5 HTML content Example Domain, URL: https://example.com/
+						6 heading Example Domain Value: 1
+							7 text Example Domain
+						8 text This domain is for use in documentation examples without needing permission. Avoid use in operations.
+						9 link [Learn more](https://iana.org/domains/example)
+	10 image ID: WindowControlShadowView._shadowImageView
+	11 toolbar
+		12 container Secondary Actions: Name: Move next
+ Target:0x0
+ Selector:(null), Name: Remove from toolbar
+ Target:0x0
+ Selector:(null)
+			13 button show sidebar Help: Show sidebar ID: SidebarButton
+			14 menu button Description: Tab Group picker ID: TabGroupPickerButton?TabGroup=
+		15 container Secondary Actions: Name: Move previous
+ Target:0x0
+ Selector:(null), Name: Move next
+ Target:0x0
+ Selector:(null), Name: Remove from toolbar
+ Target:0x0
+ Selector:(null)
+			16 container ID: BackForwardSegmentedControl
+				17 button Go back Help: Show the previous page ID: BackButton
+				18 button (disabled) Go forward Help: Show the next page ID: ForwardButton
+		19 container Secondary Actions: Name: Move previous
+ Target:0x0
+ Selector:(null), Name: Move next
+ Target:0x0
+ Selector:(null), Name: Remove from toolbar
+ Target:0x0
+ Selector:(null)
+			20 button Page Menu ID: AssistantButton
+			21 button Add page to Reading List ID: OneStepBookmarkingButton
+			22 text field (settable, string) Description: smart search field ID: WEB_BROWSER_ADDRESS_AND_SEARCH_FIELD, Value: https://example.com
+			23 button Reload this page ID: ReloadButton
+		24 button Share ID: ShareButton, Secondary Actions: Name: Move previous
+ Target:0x0
+ Selector:(null), Name: Move next
+ Target:0x0
+ Selector:(null), Name: Remove from toolbar
+ Target:0x0
+ Selector:(null)
+		25 button New Tab ID: NewTabButton, Secondary Actions: Name: Move previous
+ Target:0x0
+ Selector:(null), Name: Move next
+ Target:0x0
+ Selector:(null), Name: Remove from toolbar
+ Target:0x0
+ Selector:(null)
+		26 button Tab Overview ID: TabOverviewButton, Secondary Actions: Name: Move previous
+ Target:0x0
+ Selector:(null), Name: Remove from toolbar
+ Target:0x0
+ Selector:(null)
+	27 close button
+	28 full screen button Help: this button also has an action to zoom the window, Secondary Actions: zoom the window
+	29 minimize button
+30 menu bar
+	31 Safari
+	32 File
+	33 Edit
+	34 View ID: SafariViewMenu
+	35 History
+	36 Bookmarks ID: SafariBookmarksMenu
+	37 Develop
+	38 Window ID: SafariWindowMenu
+	39 Help ID: SafariHelpMenu
+
+The focused UI element is 5 HTML content Example Domain, URL: https://example.com/.

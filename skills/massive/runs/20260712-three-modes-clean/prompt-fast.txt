@@ -1,0 +1,1 @@
+In under 150 words, explain the Prime Gap Structure (PGS) project for a technical reader: what a prime gap interior is as an ordered divisor-count field, what the Gap Winner Rule (GWR) says, and one proved result (e.g. No-Later-Simpler-Composite through 10^18). Repo: https://github.com/zfifteen/prime-gap-structure. No hype.

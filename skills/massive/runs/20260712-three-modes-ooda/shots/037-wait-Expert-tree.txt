@@ -1,0 +1,436 @@
+App=com.apple.Safari (pid 66661)
+Window: "New conversation - Grok", App: Safari.
+0 standard window New conversation - Grok ID: SafariWindow?IsSecure=true&UUID=CD51C7FE-A78F-4159-BDB3-EA77FC5229C5, Secondary Actions: Raise
+	1 split group
+		2 tab group
+			3 container ID: BrowserView?IsPageLoaded=true&WebViewProcessID=68862
+				4 scroll area
+					5 HTML content New conversation - Grok, URL: https://grok.com/c/ff9c9374-d195-4b35-bcb1-632ff0ab70bc?rid=362c9b50-ce30-4335-a7ac-cac9e32c7741
+						6 link [Home page](https://grok.com/)
+						7 button Search
+						8 link
+						9 link
+						10 link
+						11 link
+						12 link
+						13 button History
+						14 button Toggle Sidebar
+						15 pop up button F
+						16 container
+							17 pop up button More
+							18 text Prime Gap Structure<a href="https://github.com/zfifteen/prime-gap-structure" target="_blank" rel="noopener noreferrer nofollow"></a>: the gap interior is an ordered divisor-count field; GWR selects the leftmost min-tau witness; F(n)=(1-tau(n)/2) log n. The Twin-Prime Resonance / GWR Super-Signal universal implication is invalidated (July 2026) while the modular lemma z(w)>=4 iff 30|w remains. Task: give a precise 250-400 word technical summary of (1) what is currently proved, (2) what was withdrawn and why that distinction matters for future work, (3) one rigorous next experiment that stays inside proved objects. Use epistemic tags where helpful. No probabilistic gap heuristics.
+							19 button Edit
+							20 button Copy
+							21 button Thought for 42s
+							22 text Prime Gap Structure — Current Epistemic Status (July 2026)
+							23 container
+								24 text (1) What is currently proved.
+								25 text \nThe gap interior
+								26 container
+									27 text I
+									28 text =
+									29 text {
+									30 text p
+									31 text +
+									32 text 1
+									33 text ,
+									34 text …
+									35 text ,
+									36 text q
+									37 text −
+									38 text 1
+									39 text }
+								40 text between consecutive primes forms an
+								41 text ordered divisor-count field
+								42 text under
+								43 container τ ( n )
+								44 text . The
+								45 text Gap Winner Rule (GWR)
+								46 text [formally proved via analytic closure + finite base] states that the leftmost composite
+								47 container w ∈ I
+								48 text attaining
+								49 container
+									50 container min ⁡ m ∈ I
+									51 text τ
+									52 text (
+									53 text m
+									54 text )
+								55 text is the unique maximizer of the comparison function
+							56 container
+								57 text F
+								58 text (
+								59 text n
+								60 text )
+								61 text =
+								62 container
+									63 text (
+									64 text 1
+									65 text −
+									66 container τ ( n ) 2
+									67 text )
+								68 text log
+								69 text ⁡
+								70 text n
+								71 text .
+							72 container
+								73 text This follows directly from the
+								74 text Ordered Comparison Lemma
+								75 text : for composites
+								76 container a < b
+								77 text with
+								78 container
+									79 text τ
+									80 text (
+									81 text a
+									82 text )
+									83 text ≤
+									84 text τ
+									85 text (
+									86 text b
+									87 text )
+								88 text ,
+								89 container
+									90 text F
+									91 text (
+									92 text a
+									93 text )
+									94 text >
+									95 text F
+									96 text (
+									97 text b
+									98 text )
+								99 text . Equivalently,
+								100 text w
+								101 text maximizes the raw-
+								102 text Z
+								103 text invariant
+								104 container
+									105 text Z
+									106 text (
+									107 text n
+									108 text )
+									109 text =
+									110 container
+										111 text n
+										112 container 1 − τ ( n ) / 2
+								113 text (or minimizes the excess coordinate
+								114 container
+									115 text E
+									116 text (
+									117 text n
+									118 text )
+									119 text =
+									120 text (
+									121 text τ
+									122 text (
+									123 text n
+									124 text )
+									125 text /
+									126 text 2
+									127 text −
+									128 text 1
+									129 text )
+									130 text log
+									131 text ⁡
+									132 text n
+								133 text of the Divisor Normalization Identity, with primes at
+								134 container E = 0
+								135 text ,
+								136 container Z = 1
+								137 text ).
+							138 container
+								139 text The next prime is deterministically the first return to
+								140 container τ = 2
+								141 text . Additional proved results include: universal bounded compression of the GWR witness (
+								142 container
+									143 text w
+									144 text −
+									145 text p
+									146 text ≤
+									147 text max
+									148 text ⁡
+									149 text (
+									150 text 64
+									151 text ,
+									152 text ⌈
+									153 text 0.5
+									154 text log
+									155 text ⁡
+									156 text (
+									157 text q
+									158 container ) 2
+									159 text ⌉
+									160 text )
+								161 text ); the
+								162 text Prime-Square Proximity Theorem
+								163 text (2026-07-05) on the
+								164 container τ ( w ) = 3
+								165 text branch; and the
+								166 text No-Later-Simpler-Composite
+								167 text property (zero violations through
+								168 container 10 18
+								169 text ). The modular lemma
+								170 container
+									171 text z
+									172 text (
+									173 text w
+									174 text )
+									175 text ≥
+									176 text 4
+									177 text
+									178 text ⟺
+									179 text
+									180 text 30
+									181 text ∣
+									182 text w
+								183 text on the fixed remainder vector
+								184 container
+									185 text M
+									186 text =
+									187 text {
+									188 text 2
+									189 text ,
+									190 text 3
+									191 text ,
+									192 text 5
+									193 text ,
+									194 text 7
+									195 text ,
+									196 text 30
+									197 text ,
+									198 text …
+									199 text
+									200 text }
+								201 text holds by exhaustive case analysis [proved]. All core results are independent of the Riemann Hypothesis and rest on formal proofs in
+								202 text PROOF.md
+								203 text plus computational certification to high explicit bounds.
+							204 container
+								205 text (2) What was withdrawn and why the distinction matters.
+								206 text \nThe
+								207 text Twin-Prime Resonance / GWR Super-Signal
+								208 text universal implication — that
+								209 container z ( w ) ≥ 4
+								210 text at the GWR witness forces gap size
+								211 container g = 2
+								212 text — was invalidated on 2026-07-09. Explicit counterexamples (e.g.,
+								213 container p = 17,666,309
+								214 text ,
+								215 container q = 17,666,317
+								216 text ,
+								217 container g = 8
+								218 text ,
+								219 container w = 17,666,310
+								220 text ,
+								221 container τ ( w ) = 16
+								222 text ,
+								223 container z ( w ) = 4
+								224 text ) demonstrate that the local modular condition does not entail the global twin-prime conclusion.
+							225 container
+								226 text (3) One rigorous next experiment inside proved objects.
+								227 text Execute
+								228 text a
+								229 text deterministic,
+								230 text segmented
+								231 text census
+								232 text of
+								233 text every
+								234 text prime
+								235 text gap
+								236 text in
+								237 text a
+								238 text new
+								239 text certified
+								240 text range
+								241 text (e.g.,
+								242 container
+									243 text [
+									244 container 10 18
+									245 text ,
+									246 container 10 18
+									247 text +
+									248 text Δ
+									249 text ]
+								250 text with
+								251 text exact
+								252 text τ
+								253 text evaluation).
+								254 text For
+								255 text each
+								256 text gap:
+								257 text (i)
+								258 text identify
+								259 text w
+								260 text as
+								261 text the
+								262 text leftmost
+								263 text min-
+								264 text τ
+								265 text composite
+								266 text in
+								267 text I
+								268 text ;
+								269 text (ii)
+								270 text verify
+								271 text it
+								272 text uniquely
+								273 text maximizes
+								274 container F ( n )
+								275 text and
+								276 text satisfies
+								277 text the
+								278 text proved
+								279 text bounded-compression
+								280 text bound;
+								281 text (iii)
+								282 text confirm
+								283 text No-Later-Simpler-Composite
+								284 text holds
+								285 text throughout
+								286 container ( w , q )
+								287 text ;
+								288 text (iv)
+								289 text for
+								290 text every
+								291 text w
+								292 text satisfying
+								293 text the
+								294 text proved
+								295 text modular
+								296 text condition
+								297 container 30 ∣ w
+								298 text ,
+								299 text record
+								300 text the
+								301 text realized
+								302 text gap
+								303 text size
+								304 container g = q − p
+								305 text .
+								306 text Use
+								307 text only
+								308 text predicates
+								309 text and
+								310 text objects
+								311 text internal
+								312 text to
+								313 text the
+								314 text established
+								315 text theorems
+								316 text (no
+								317 text external
+								318 text heuristics
+								319 text or
+								320 text probabilistic
+								321 text sampling).
+								322 text The
+								323 text output
+								324 text extends
+								325 text the
+								326 text validation
+								327 text surface,
+								328 text quantifies
+								329 text the
+								330 text separation
+								331 text between
+								332 text the
+								333 text modular
+								334 text lemma
+								335 text and
+								336 text twin
+								337 text occurrence,
+								338 text and
+								339 text supplies
+								340 text clean
+								341 text data
+								342 text for
+								343 text potential
+								344 text refinements
+								345 text of
+								346 text local-to-global
+								347 text implications
+								348 text or
+								349 text further
+								350 text Lean
+								351 text formalization
+								352 text —
+								353 text all
+								354 text while
+								355 text remaining
+								356 text strictly
+								357 text inside
+								358 text proved
+								359 text territory
+							360 button Scroll down
+							361 container
+								362 text entry area (settable, string) Ask Grok anything
+									363 text Ask anything
+								364 pop up button Attach
+								365 pop up button Model select
+								366 button Dictation (⌃D)
+								367 button Stop model response
+						368 container Notifications alt+T
+						369 text New conversation - Grok
+	370 image ID: WindowControlShadowView._shadowImageView
+	371 toolbar
+		372 container Secondary Actions: Name: Move next
+ Target:0x0
+ Selector:(null), Name: Remove from toolbar
+ Target:0x0
+ Selector:(null)
+			373 button show sidebar Help: Show sidebar ID: SidebarButton
+			374 menu button Description: Tab Group picker ID: TabGroupPickerButton?TabGroup=
+		375 container Secondary Actions: Name: Move previous
+ Target:0x0
+ Selector:(null), Name: Move next
+ Target:0x0
+ Selector:(null), Name: Remove from toolbar
+ Target:0x0
+ Selector:(null)
+			376 container ID: BackForwardSegmentedControl
+				377 button Go back Help: Show the previous page ID: BackButton
+				378 button (disabled) Go forward Help: Show the next page ID: ForwardButton
+		379 container Secondary Actions: Name: Move previous
+ Target:0x0
+ Selector:(null), Name: Move next
+ Target:0x0
+ Selector:(null), Name: Remove from toolbar
+ Target:0x0
+ Selector:(null)
+			380 button Page Menu ID: AssistantButton
+			381 button Add page to Reading List ID: OneStepBookmarkingButton
+			382 text field (settable, string) Description: smart search field ID: WEB_BROWSER_ADDRESS_AND_SEARCH_FIELD, Value: https://grok.com/c/ff9c9374-d195-4b35-bcb1-632ff0ab70bc?rid=362c9b50-ce30-4335-a7ac-cac9e32c7741
+			383 button Reload this page ID: ReloadButton
+		384 button Share ID: ShareButton, Secondary Actions: Name: Move previous
+ Target:0x0
+ Selector:(null), Name: Move next
+ Target:0x0
+ Selector:(null), Name: Remove from toolbar
+ Target:0x0
+ Selector:(null)
+		385 button New Tab ID: NewTabButton, Secondary Actions: Name: Move previous
+ Target:0x0
+ Selector:(null), Name: Move next
+ Target:0x0
+ Selector:(null), Name: Remove from toolbar
+ Target:0x0
+ Selector:(null)
+		386 button Tab Overview ID: TabOverviewButton, Secondary Actions: Name: Move previous
+ Target:0x0
+ Selector:(null), Name: Remove from toolbar
+ Target:0x0
+ Selector:(null)
+	387 close button
+	388 full screen button Help: this button also has an action to zoom the window, Secondary Actions: zoom the window
+	389 minimize button
+390 menu bar
+	391 Safari
+	392 File
+	393 Edit
+	394 View ID: SafariViewMenu
+	395 History
+	396 Bookmarks ID: SafariBookmarksMenu
+	397 Develop
+	398 Window ID: SafariWindowMenu
+	399 Help ID: SafariHelpMenu
+
+The focused UI element is 362 text entry area (settable, string) Ask Grok anything.

@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/Users/velocityworks/.grok/skills/massive/runs/20260712-learn-modes/learn2/ax_probe.py", line 7, in <module>
+    from ApplicationServices import (
+    ...<5 lines>...
+    )
+ModuleNotFoundError: No module named 'ApplicationServices'

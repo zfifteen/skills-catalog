@@ -1,0 +1,12 @@
+GLOBAL_POINTER 1
+saved 07-before
+Model select 23 pop up button Model select
+CURSOR CLICK element Model select 23
+saved 07-after-model-select
+=== mode-related after click ===
+23 pop up button Model select
+37 button Page Menu ID: AssistantButton
+58 Bookmarks ID: SafariBookmarksMenu
+60 Window ID: SafariWindowMenu
+61 Help ID: SafariHelpMenu
+done

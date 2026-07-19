@@ -1,0 +1,101 @@
+App=com.apple.Safari (pid 66661)
+Window: "Grok", App: Safari.
+0 standard window Grok ID: SafariWindow?IsSecure=true&UUID=CD51C7FE-A78F-4159-BDB3-EA77FC5229C5, Secondary Actions: Raise
+	1 split group
+		2 tab group
+			3 container ID: BrowserView?IsPageLoaded=true&WebViewProcessID=66761
+				4 scroll area
+					5 HTML content Grok, URL: https://grok.com/
+						6 link [Home page](https://grok.com/)
+						7 button Search
+						8 link
+						9 link
+						10 link
+						11 link
+						12 link
+						13 button History
+						14 button Toggle Sidebar
+						15 pop up button F
+						16 container
+							17 link [Switch to Private Chat](https://grok.com/c#private)
+							18 container
+								19 text entry area (settable, string) Ask Grok anything
+									20 container (settable, string)
+								21 text What's on your mind?
+								22 pop up button Attach
+								23 pop up button Model select
+								24 button Dictation (⌃D)
+								25 button Enter voice mode (⌘⇧O)
+						26 container Notifications alt+T
+							27 container
+								28 text Customize how much your dictation is cleaned up in settings.
+								29 button Settings
+	30 image ID: WindowControlShadowView._shadowImageView
+	31 toolbar
+		32 container Secondary Actions: Name: Move next
+ Target:0x0
+ Selector:(null), Name: Remove from toolbar
+ Target:0x0
+ Selector:(null)
+			33 button show sidebar Help: Show sidebar ID: SidebarButton
+			34 menu button Description: Tab Group picker ID: TabGroupPickerButton?TabGroup=
+		35 container Secondary Actions: Name: Move previous
+ Target:0x0
+ Selector:(null), Name: Move next
+ Target:0x0
+ Selector:(null), Name: Remove from toolbar
+ Target:0x0
+ Selector:(null)
+			36 container (disabled) ID: BackForwardSegmentedControl
+				37 button (disabled) Go back Help: Show the previous page ID: BackButton
+				38 button (disabled) Go forward Help: Show the next page ID: ForwardButton
+		39 container Secondary Actions: Name: Move previous
+ Target:0x0
+ Selector:(null), Name: Move next
+ Target:0x0
+ Selector:(null), Name: Remove from toolbar
+ Target:0x0
+ Selector:(null)
+			40 button Page Menu ID: AssistantButton
+			41 text field (settable, string) Description: smart search field ID: WEB_BROWSER_ADDRESS_AND_SEARCH_FIELD, Value: https://grok.com
+			42 button Reload this page ID: ReloadButton
+		43 button (disabled) Share ID: ShareButton, Secondary Actions: Name: Move previous
+ Target:0x0
+ Selector:(null), Name: Move next
+ Target:0x0
+ Selector:(null), Name: Remove from toolbar
+ Target:0x0
+ Selector:(null)
+		44 button (disabled) New Tab ID: NewTabButton, Secondary Actions: Name: Move previous
+ Target:0x0
+ Selector:(null), Name: Move next
+ Target:0x0
+ Selector:(null), Name: Remove from toolbar
+ Target:0x0
+ Selector:(null)
+		45 button (disabled) Tab Overview ID: TabOverviewButton, Secondary Actions: Name: Move previous
+ Target:0x0
+ Selector:(null), Name: Remove from toolbar
+ Target:0x0
+ Selector:(null)
+	46 close button (disabled)
+	47 zoom button
+	48 minimize button
+	49 sheet Description: alert, Secondary Actions: Raise
+		50 text Allow “grok.com” to use your microphone?
+		51 text You can change this setting in the Websites section of Safari Settings.
+		52 button (disabled) Allow ID: action-button-1
+		53 button (disabled) Never for This Website ID: action-button-3
+		54 button (disabled) Don’t Allow ID: action-button-2
+55 menu bar
+	56 Safari
+	57 File
+	58 Edit
+	59 View ID: SafariViewMenu
+	60 History
+	61 Bookmarks ID: SafariBookmarksMenu
+	62 Develop
+	63 Window ID: SafariWindowMenu
+	64 Help ID: SafariHelpMenu
+
+The focused UI element is 49 sheet Description: alert.

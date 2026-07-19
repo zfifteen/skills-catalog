@@ -1,0 +1,4 @@
+interface:
+  display_name: "Grok Collab"
+  short_description: "Reason with Grok before answering"
+  default_prompt: "Use $grok-collab to reason with Grok as a collaborative layer before answering."

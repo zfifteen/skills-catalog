@@ -1,0 +1,24 @@
+
+=== Expert ===
+  geo: {'x': 1134.0, 'y': 515.0, 'w': 111.0, 'h': 47.0, 'cx': 1189.5, 'cy': 538.5} raw=FOUND|1134,515,111,47
+  menu: {'Auto': (1104.0, 596.0), 'Fast': (1104.0, 656.0), 'Expert': (1104.0, 716.0), 'Heavy': (1104.0, 775.0)}
+  click Expert @ (1104.0,716.0)
+  ok=True width 111.0->129.0 still_menu=False
+
+=== Heavy ===
+  geo: {'x': 1116.0, 'y': 515.0, 'w': 129.0, 'h': 47.0, 'cx': 1180.5, 'cy': 538.5} raw=FOUND|1116,515,129,47
+  menu: {'Auto': (1104.0, 596.0), 'Fast': (1104.0, 656.0), 'Expert': (1104.0, 716.0), 'Heavy': (1104.0, 775.0)}
+  click Heavy @ (1104.0,775.0)
+  ok=True width 129.0->128.0 still_menu=False
+
+=== Fast ===
+  geo: {'x': 1117.0, 'y': 515.0, 'w': 128.0, 'h': 47.0, 'cx': 1181.0, 'cy': 538.5} raw=FOUND|1117,515,128,47
+  menu: {'Auto': (1104.0, 596.0), 'Fast': (1104.0, 656.0), 'Expert': (1104.0, 716.0), 'Heavy': (1104.0, 775.0)}
+  click Fast @ (1104.0,656.0)
+  ok=True width 128.0->111.0 still_menu=False
+
+===== SUMMARY =====
+  Expert: {'ok': True, 'width_before': 111.0, 'width_after': 129.0, 'menu_still': False, 'shot': '/Users/velocityworks/.grok/skills/massive/runs/20260712-learn-modes/learn2/07-after-Expert.png', 'geo_after': {'x': 1116.0, 'y': 515.0, 'w': 129.0, 'h': 47.0, 'cx': 1180.5, 'cy': 538.5}}
+  Heavy: {'ok': True, 'width_before': 129.0, 'width_after': 128.0, 'menu_still': False, 'shot': '/Users/velocityworks/.grok/skills/massive/runs/20260712-learn-modes/learn2/07-after-Heavy.png', 'geo_after': {'x': 1117.0, 'y': 515.0, 'w': 128.0, 'h': 47.0, 'cx': 1181.0, 'cy': 538.5}}
+  Fast: {'ok': True, 'width_before': 128.0, 'width_after': 111.0, 'menu_still': False, 'shot': '/Users/velocityworks/.grok/skills/massive/runs/20260712-learn-modes/learn2/07-after-Fast.png', 'geo_after': {'x': 1134.0, 'y': 515.0, 'w': 111.0, 'h': 47.0, 'cx': 1189.5, 'cy': 538.5}}
+ALL_THREE_OK

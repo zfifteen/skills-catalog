@@ -1,0 +1,4 @@
+interface:
+  display_name: "Most Important Development"
+  short_description: "Most Important Development"
+  default_prompt: "Use $grok-task-v3-most-important-development on the current material."

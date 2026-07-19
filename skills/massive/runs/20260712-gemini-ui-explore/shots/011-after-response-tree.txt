@@ -1,0 +1,121 @@
+App=com.apple.Safari (pid 66661)
+Window: "Google Gemini", App: Safari.
+0 standard window Google Gemini ID: SafariWindow?IsSecure=true&UUID=CD51C7FE-A78F-4159-BDB3-EA77FC5229C5, Secondary Actions: Raise
+	1 split group
+		2 tab group
+			3 container ID: BrowserView?IsPageLoaded=true&WebViewProcessID=71666
+				4 scroll area
+					5 HTML content Google Gemini, URL: https://gemini.google.com/app
+						6 container
+							7 button Open sidebar
+							8 text Temporary Chat
+							9 container Side Navigation
+								10 container Main actions menu
+									11 link [New chat](https://gemini.google.com/app)
+									12 link [Search chats](https://gemini.google.com/search)
+								13 container Additional actions menu
+									14 link [Daily brief](https://gemini.google.com/daily-brief)
+									15 link [Images](https://gemini.google.com/images)
+									16 link [Videos](https://gemini.google.com/videos)
+									17 link [Library](https://gemini.google.com/library)
+									18 link [Gems](https://gemini.google.com/gems/view)
+								19 container
+									20 link [Google Account: Dionisio Lopez (dionisio.lopez@gmail.com)](https://accounts.google.com/SignOutOptions?continue=https://gemini.google.com)
+									21 pop up button Settings
+							22 heading Conversation with Gemini Value: 1
+								23 text Conversation with Gemini
+							24 heading You said Reply with exactly: Hello from Gemini UI probe. Value: 2
+								25 text You said
+								26 text Reply with exactly: Hello from Gemini UI probe.
+							27 button Copy prompt
+							28 button Edit
+							29 heading Gemini said Value: 2
+								30 text Gemini said
+							31 text Hello from Gemini UI probe.
+							32 button Redo
+							33 button Copy
+							34 button Show more options
+							35 container
+								36 text entry area (settable, string) Enter a prompt for Gemini
+									37 text Ask Gemini
+									38 container (settable, string)
+								39 text entry area (settable, string)
+								40 pop up button Upload & tools
+								41 pop up button Open mode picker, currently Pro
+								42 button Microphone
+							43 text Gemini is AI and can make mistakes.
+	44 image ID: WindowControlShadowView._shadowImageView
+	45 toolbar
+		46 container Secondary Actions: Name: Move next
+ Target:0x0
+ Selector:(null), Name: Remove from toolbar
+ Target:0x0
+ Selector:(null)
+			47 button show sidebar Help: Show sidebar ID: SidebarButton
+			48 menu button Description: Tab Group picker ID: TabGroupPickerButton?TabGroup=
+		49 container Secondary Actions: Name: Move previous
+ Target:0x0
+ Selector:(null), Name: Move next
+ Target:0x0
+ Selector:(null), Name: Remove from toolbar
+ Target:0x0
+ Selector:(null)
+			50 container ID: BackForwardSegmentedControl
+				51 button Go back Help: Show the previous page ID: BackButton
+				52 button (disabled) Go forward Help: Show the next page ID: ForwardButton
+		53 container Secondary Actions: Name: Move previous
+ Target:0x0
+ Selector:(null), Name: Move next
+ Target:0x0
+ Selector:(null), Name: Remove from toolbar
+ Target:0x0
+ Selector:(null)
+			54 button Page Menu ID: AssistantButton
+			55 button (disabled) Add page to Reading List ID: OneStepBookmarkingButton
+			56 text field (settable, string) Description: smart search field ID: WEB_BROWSER_ADDRESS_AND_SEARCH_FIELD, Value: https://gemini.google.com/app
+			57 button Reload this page ID: ReloadButton
+		58 button Share ID: ShareButton, Secondary Actions: Name: Move previous
+ Target:0x0
+ Selector:(null), Name: Move next
+ Target:0x0
+ Selector:(null), Name: Remove from toolbar
+ Target:0x0
+ Selector:(null)
+		59 button New Tab ID: NewTabButton, Secondary Actions: Name: Move previous
+ Target:0x0
+ Selector:(null), Name: Move next
+ Target:0x0
+ Selector:(null), Name: Remove from toolbar
+ Target:0x0
+ Selector:(null)
+		60 button Tab Overview ID: TabOverviewButton, Secondary Actions: Name: Move previous
+ Target:0x0
+ Selector:(null), Name: Remove from toolbar
+ Target:0x0
+ Selector:(null)
+	61 tab group Description: Tab bar, 2 tabs ID: TabBar?isSeparate=false
+		62 tab Prime Gap Structure: GWR and Modular Lemmas - Grok ID: TabBarTab?isPinned=false&isNarrow=false&isActive=false, Value: off, Secondary Actions: Name:close tab
+ Target:0x903c7d180
+ Selector:_close Button Clicked:
+			63 image ID: FaviconImageView
+			64 text ID: UnifiedTabBarButton._titleTextField Prime Gap Structure: GWR and Modular Lemmas - Grok
+		65 tab Google Gemini Help: To interact with the items in this button, press Control-Option-Shift-Down Arrow. ID: TabBarTab?isPinned=false&isNarrow=false&isActive=true, Value: on, Secondary Actions: Name:close tab
+ Target:0x903c7aa00
+ Selector:_close Button Clicked:
+			66 image ID: FaviconImageView
+			67 text ID: UnifiedTabBarButton._titleTextField Google Gemini
+	68 close button
+	69 full screen button Help: this button also has an action to zoom the window, Secondary Actions: zoom the window
+	70 minimize button
+71 menu bar
+	72 Safari
+	73 File
+	74 Edit
+	75 View ID: SafariViewMenu
+	76 History
+	77 Bookmarks ID: SafariBookmarksMenu
+	78 Develop
+	79 Window ID: SafariWindowMenu
+	80 Help ID: SafariHelpMenu
+
+The focused UI element is 36 text entry area (settable, string) Enter a prompt for Gemini.

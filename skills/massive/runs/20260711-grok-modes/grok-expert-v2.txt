@@ -1,0 +1,214 @@
+Prime-Gap-Structure - 4 unread messages - Velocity Works
+Update your Rocket.ChatNew version available (8.6.1)
+
+
+Skip to main content
+
+
+
+
+
+
+
+
+
+
+
+
+
+༺
+
+{
+
+
+
+
+
+
+
+
+
+Channels
+
+
+Prime-Gap-Structure
+
+
+
+
+rocketchat-grok-docs
+
+
+
+
+research
+
+
+
+
+Agency
+
+
+
+Direct messages
+
+grok
+4
+
+
+
+rocket.cat
+
+
+
+Powered by Rocket.Chat
+Starter
+
+Prime-Gap-Structure
+
+
+Add topic
+
+❲
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+July 11th, 2026
+
+grok
+10:06 PM
+
+Short answer: Strong as an ops + anti-drift contract, not fully optimal as a research-leverage design for post-breakthrough hours.
+
+What is already good
+
+| Piece | Why it works |
+| --- | --- |
+| Dual labels (ADVANCE / NO_DELTA / FAILED / UNRESOLVED + ops) | Stops “pytest green = science” |
+| ADVANCE needs a concrete delta (new band, residual table, lemma + falsify command) | Right success criterion |
+| PGS-first + no classical gates + do not re-litigate proved PSP | Shape control |
+| Isolated worktree + mandatory commit after every outcome | Survives dirty main and FAILED hours |
+| Deterministic signature / baseline for replay | Real NO_DELTA detection on sweeps |
+| One RC post via shell EXIT trap only | Fixes double-post class of bugs |
+| Single queue item per hour | Bounded scope |
+
+For a post-proof audit relay, that spine is close to optimal.
+
+Why it is not fully optimal
+
+1. Research center of gravity is stale relative to the theorem
+PSP / universal bounded compression is proved (PROOF.md, 2026-07-05). The live queue still spends most hours on mid-band square-branch sweeps (4e8–5e8) and residual theater around offset 540. That is legitimate audit corroboration, but the marginal scientific return per hour is lower than Lean discharge, residual classes that attack open structure, or RSA endpoint pressure. Instructions optimize honest audit, not highest-leverage open problem.
+
+2. Queue does not auto-extend frontiers
+Contract says bands should move past certified regimes, but the JSON still parks on 4e8–5e8 as a rotating item. After a clean band, the default should promote to 5e8–6e8 (or higher) without waiting for a human edit. Otherwise hours replay or re-audit the same surface.
+
+3. Analytic Grok prompt under-specifies “delta”
+Deterministic path has signatures. Analytic path relies on prose judgment (“one falsifiable table / lemma subsection”). That allows soft ADVANCEs (new RC labels that restyle known chamber facts) unless the prompt requires:
+explicit contrast to the last ledger residual table, and
+a machine-checkable prediction (command + expected fail/pass condition).
+
+4. Same pytest for every job type
+Lemma drafts and offset audits all run test_square_branch_dynamic_cutoff_search. That is a weak correctness gate for analytic deliverables. Optimal: job-specific smoke (JSON schema for residual tables, link check for HTML subsection, probe unit test).
+
+5. Path-drift hazard
+Queue can point at scripts that exist on main but not on codex/hourly-square-branch (already produced a FAILED hour: missing prefix-τ probe). Optimal instructions include a preflight: “command path must exist in isolated worktree or job is FAILED before science starts.”
+
+6. Missing positive research duties
+Prompt is excellent at forbidden moves. It under-specifies required novelty pressure for grok hours (PGS-native residual hypothesis that could fail this hour). Standing novel-insight duty from Agents.md is not wired into the hourly analytic template.
+
+7. Read list may be partially obsolete
+square_branch_blocker_acceptance.md as mandatory every hour after the square branch closed can re-center a finished fight. Prefer: “read only if job id is square-branch residual.”
+
+8. No wall-time / cost budget
+Full multi-million-root sweeps every fourth hour is fine when intentional; instructions do not cap wall clock or force smaller stratified samples when the band is already green.
+
+Verdict
+
+| Layer | Optimal? |
+| --- | --- |
+| Safety / status separation / ops durability | Mostly yes |
+| Post-breakthrough research allocation | No — still audit-heavy relative to open frontiers |
+| Analytic delta quality control | Partial — needs harder falsifiability + job-local tests |
+| Queue hygiene (paths, band promotion) | Partial — known failure modes remain |
+
+Highest-leverage fixes (if you want them next)
+
+Auto-promote falsification max_prime after ADVANCE on a band.
+Analytic jobs: require Δ vs last residual table + one runnable falsify command in last_run.json.
+Preflight path exists in isolated root.
+Split queue weight: e.g. 1 audit band / 1 residual / 1 Lean-or-lemma / 1 open-track (RSA or novel residual).
+Job-specific pytest/smoke, not one global square-branch test for everything.
+
+I can implement (1)+(3) as a small dispatch/queue patch on the hourly branch if you want that as the next ops delta.
+
+principal
+Admin
+Owner
+11:02 PM
+Prime Gap Structure (https://github.com/zfifteen/prime-gap-structure): the gap interior is an ordered divisor-count field; GWR selects the leftmost min-tau witness; F(n)=(1-tau(n)/2) log n. The Twin-Prime Resonance / GWR Super-Signal universal implication is invalidated (July 2026) while the modular lemma z(w)>=4 iff 30|w remains. Task: give a precise 250-400 word technical summary of (1) what is currently proved, (2) what was withdrawn and why that distinction matters for future work, (3) one rigorous next experiment that stays inside proved objects. Use epistemic tags where helpful. No probabilistic gap heuristics.
+Link Preview
+
+
+GitHub - zfifteen/prime-gap-structure: Investigates deterministic prime-gap interiors using the Divisor Normalization Identity (DNI). Establishes the Gap Winner Rule (GWR) the raw-Z maximizer is always the leftmost min-d(n) carrier. Validates the No-Later-Simpler-Composite Theorem with zero violations through 10^18. Documents hierarchical first-arrival laws and square-phase terminal.
+Investigates deterministic prime-gap interiors using the Divisor Normalization Identity (DNI). Establishes the Gap Winner Rule (GWR) the raw-Z maximizer is always the leftmost min-d(n) carrier. Val...
+GitHub
+
+
+
+
+
+
+
+
+
+
+unread messages
+
+grok
+11:02 PM
+
+Working…
+• room: Prime-Gap-Structure
+• cwd: prime-gap-structure
+• mode: restricted
+• phase: starting
+• elapsed: 0s
+• session: 019f4897
+
+
+
+
+
+
+
+
+
+
+
+
+⁅
+
+
+
+
+
+
+
+
+
+
+
+
+
+〈

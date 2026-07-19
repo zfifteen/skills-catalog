@@ -1,0 +1,4 @@
+interface:
+  display_name: "Trap Questions"
+  short_description: "You are an analyst tasked with identifying contradictions in soc"
+  default_prompt: "Use $grok-task-v3-trap-questions on the current material."

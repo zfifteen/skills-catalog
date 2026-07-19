@@ -1,0 +1,104 @@
+App=com.apple.Safari (pid 66661)
+Window: "New conversation - Grok", App: Safari.
+0 standard window New conversation - Grok ID: SafariWindow?IsSecure=true&UUID=CD51C7FE-A78F-4159-BDB3-EA77FC5229C5, Secondary Actions: Raise
+	1 split group
+		2 tab group
+			3 container ID: BrowserView?IsPageLoaded=true&WebViewProcessID=68862
+				4 scroll area
+					5 HTML content New conversation - Grok, URL: https://grok.com/c/62149c6c-09e1-4d4f-873b-6f220cce1f33?rid=db663cec-46b4-4282-ae5a-fab3df03445c
+						6 link [Home page](https://grok.com/)
+						7 button Search
+						8 link
+						9 link
+						10 link
+						11 link
+						12 link
+						13 button History
+						14 button Toggle Sidebar
+						15 pop up button F
+						16 container
+							17 pop up button More
+							18 container
+								19 text In under 150 words, explain the Prime Gap Structure (PGS) project for a technical reader: what a prime gap interior is as an ordered divisor-count field, what the Gap Winner Rule (GWR) says, and one proved result (e.g. No-Later-Simpler-Composite through 10^18). Repo:
+								20 link [https://github.com/zfifteen/prime-gap-structure](https://github.com/zfifteen/prime-gap-structure)
+								21 text . No hype.
+							22 button Edit
+							23 button Copy
+							24 button Thinking about your request • 2s
+							25 text Opened page
+							26 link [github.com/zfifteen/prime-gap-structure](https://github.com/zfifteen/prime-gap-structure)
+							27 text Opened page
+							28 link [github.com/zfifteen/prime-gap-structure/blob/main/README.md](https://github.com/zfifteen/prime-gap-structure/blob/main/README.md)
+							29 container
+								30 text entry area (settable, string) Ask Grok anything
+									31 text Ask anything
+								32 pop up button Attach
+								33 pop up button Model select
+								34 button Dictation (⌃D)
+								35 button Stop model response
+						36 container Notifications alt+T
+						37 text New conversation - Grok
+	38 image ID: WindowControlShadowView._shadowImageView
+	39 toolbar
+		40 container Secondary Actions: Name: Move next
+ Target:0x0
+ Selector:(null), Name: Remove from toolbar
+ Target:0x0
+ Selector:(null)
+			41 button show sidebar Help: Show sidebar ID: SidebarButton
+			42 menu button Description: Tab Group picker ID: TabGroupPickerButton?TabGroup=
+		43 container Secondary Actions: Name: Move previous
+ Target:0x0
+ Selector:(null), Name: Move next
+ Target:0x0
+ Selector:(null), Name: Remove from toolbar
+ Target:0x0
+ Selector:(null)
+			44 container ID: BackForwardSegmentedControl
+				45 button Go back Help: Show the previous page ID: BackButton
+				46 button (disabled) Go forward Help: Show the next page ID: ForwardButton
+		47 container Secondary Actions: Name: Move previous
+ Target:0x0
+ Selector:(null), Name: Move next
+ Target:0x0
+ Selector:(null), Name: Remove from toolbar
+ Target:0x0
+ Selector:(null)
+			48 button Page Menu ID: AssistantButton
+			49 button Add page to Reading List ID: OneStepBookmarkingButton
+			50 text field (settable, string) Description: smart search field ID: WEB_BROWSER_ADDRESS_AND_SEARCH_FIELD, Value: https://grok.com/c/62149c6c-09e1-4d4f-873b-6f220cce1f33?rid=db663cec-46b4-4282-ae5a-fab3df03445c
+			51 button Reload this page ID: ReloadButton
+		52 button Share ID: ShareButton, Secondary Actions: Name: Move previous
+ Target:0x0
+ Selector:(null), Name: Move next
+ Target:0x0
+ Selector:(null), Name: Remove from toolbar
+ Target:0x0
+ Selector:(null)
+		53 button New Tab ID: NewTabButton, Secondary Actions: Name: Move previous
+ Target:0x0
+ Selector:(null), Name: Move next
+ Target:0x0
+ Selector:(null), Name: Remove from toolbar
+ Target:0x0
+ Selector:(null)
+		54 button Tab Overview ID: TabOverviewButton, Secondary Actions: Name: Move previous
+ Target:0x0
+ Selector:(null), Name: Remove from toolbar
+ Target:0x0
+ Selector:(null)
+	55 close button
+	56 full screen button Help: this button also has an action to zoom the window, Secondary Actions: zoom the window
+	57 minimize button
+58 menu bar
+	59 Safari
+	60 File
+	61 Edit
+	62 View ID: SafariViewMenu
+	63 History
+	64 Bookmarks ID: SafariBookmarksMenu
+	65 Develop
+	66 Window ID: SafariWindowMenu
+	67 Help ID: SafariHelpMenu
+
+The focused UI element is 30 text entry area (settable, string) Ask Grok anything.

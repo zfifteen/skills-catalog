@@ -1,0 +1,101 @@
+App=com.apple.Safari (pid 1060)
+Window: "Grok", App: Safari.
+0 standard window Grok ID: SafariWindow?IsSecure=true&UUID=EE6545D4-7503-44B0-8F78-37178AE1DD26, Secondary Actions: Raise
+	1 split group
+		2 tab group
+			3 container ID: BrowserView?IsPageLoaded=true&WebViewProcessID=66054
+				4 scroll area
+					5 HTML content Grok, URL: https://grok.com/
+						6 link [Home page](https://grok.com/)
+						7 button Search
+						8 link
+						9 link
+						10 link
+						11 link
+						12 link
+						13 button History
+						14 button Toggle Sidebar
+						15 pop up button F
+						16 container
+							17 link [Switch to Private Chat](https://grok.com/c#private)
+							18 container
+								19 text entry area (settable, string) Ask Grok anything
+									20 container (settable, string)
+								21 text What do you want to know?
+								22 pop up button Attach
+								23 pop up button Model select
+								24 button Dictation (⌃D)
+								25 button Enter voice mode (⌘⇧O)
+						26 container Notifications alt+T
+	27 image ID: WindowControlShadowView._shadowImageView
+	28 toolbar
+		29 container Secondary Actions: Name: Move next
+ Target:0x0
+ Selector:(null), Name: Remove from toolbar
+ Target:0x0
+ Selector:(null)
+			30 button show sidebar Help: Show sidebar ID: SidebarButton
+			31 menu button Description: Tab Group picker ID: TabGroupPickerButton?TabGroup=
+		32 container Secondary Actions: Name: Move previous
+ Target:0x0
+ Selector:(null), Name: Move next
+ Target:0x0
+ Selector:(null), Name: Remove from toolbar
+ Target:0x0
+ Selector:(null)
+			33 container ID: BackForwardSegmentedControl
+				34 button Go back Help: Show the previous page ID: BackButton
+				35 button (disabled) Go forward Help: Show the next page ID: ForwardButton
+		36 container Secondary Actions: Name: Move previous
+ Target:0x0
+ Selector:(null), Name: Move next
+ Target:0x0
+ Selector:(null), Name: Remove from toolbar
+ Target:0x0
+ Selector:(null)
+			37 button Page Menu ID: AssistantButton
+			38 button Add page to Reading List ID: OneStepBookmarkingButton
+			39 text field (settable, string) Description: smart search field ID: WEB_BROWSER_ADDRESS_AND_SEARCH_FIELD, Value: https://grok.com
+			40 button Reload this page ID: ReloadButton
+		41 button Share ID: ShareButton, Secondary Actions: Name: Move previous
+ Target:0x0
+ Selector:(null), Name: Move next
+ Target:0x0
+ Selector:(null), Name: Remove from toolbar
+ Target:0x0
+ Selector:(null)
+		42 button New Tab ID: NewTabButton, Secondary Actions: Name: Move previous
+ Target:0x0
+ Selector:(null), Name: Move next
+ Target:0x0
+ Selector:(null), Name: Remove from toolbar
+ Target:0x0
+ Selector:(null)
+		43 button Tab Overview ID: TabOverviewButton, Secondary Actions: Name: Move previous
+ Target:0x0
+ Selector:(null), Name: Remove from toolbar
+ Target:0x0
+ Selector:(null)
+	44 tab group Description: Tab bar, 2 tabs ID: TabBar?isSeparate=false
+		45 tab Grok ID: TabBarTab?isPinned=false&isNarrow=false&isActive=false, Value: off, Secondary Actions: Name:close tab
+ Target:0xbb2addc00
+ Selector:_close Button Clicked:
+			46 image ID: FaviconImageView
+			47 text ID: UnifiedTabBarButton._titleTextField Grok
+		48 tab Grok Help: To interact with the items in this button, press Control-Option-Shift-Down Arrow. ID: TabBarTab?isPinned=false&isNarrow=false&isActive=true, Value: on, Secondary Actions: Name:close tab
+ Target:0xbb2ade680
+ Selector:_close Button Clicked:
+			49 image ID: FaviconImageView
+			50 text ID: UnifiedTabBarButton._titleTextField Grok
+51 menu bar
+	52 Safari
+	53 File
+	54 Edit
+	55 View ID: SafariViewMenu
+	56 History
+	57 Bookmarks ID: SafariBookmarksMenu
+	58 Develop
+	59 Window ID: SafariWindowMenu
+	60 Help ID: SafariHelpMenu
+
+The focused UI element is 19 text entry area (settable, string) Ask Grok anything.

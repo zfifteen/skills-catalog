@@ -1,0 +1,351 @@
+App=com.apple.Safari (pid 66661)
+Window: "Prime Gap Structure: GWR Interior Analysis - Grok", App: Safari.
+0 standard window Prime Gap Structure: GWR Interior Analysis - Grok ID: SafariWindow?IsSecure=true&UUID=CD51C7FE-A78F-4159-BDB3-EA77FC5229C5, Secondary Actions: Raise
+	1 split group
+		2 tab group
+			3 container ID: BrowserView?IsPageLoaded=true&WebViewProcessID=68862
+				4 scroll area
+					5 HTML content Prime Gap Structure: GWR Interior Analysis - Grok, URL: https://grok.com/c/1d90bb71-093d-4ff3-806b-47f7704db293?rid=73bf0f02-2501-4b86-aa44-9ef1c896c8c6
+						6 link [Home page](https://grok.com/)
+						7 button Search
+						8 link
+						9 link
+						10 link
+						11 link
+						12 link
+						13 button History
+						14 button Toggle Sidebar
+						15 pop up button F
+						16 container
+							17 pop up button More
+							18 button Create share link
+							19 text Prime Gap Structure<a href="https://github.com/zfifteen/prime-gap-structure" target="_blank" rel="noopener noreferrer nofollow"></a>: the gap interior is an ordered divisor-count field; GWR selects the leftmost min-tau witness; F(n)=(1-tau(n)/2) log n. The Twin-Prime Resonance / GWR Super-Signal universal implication is invalidated (July 2026) while the modular lemma z(w)>=4 iff 30|w remains. Task: give a precise 250-400 word technical summary of (1) what is currently proved, (2) what was withdrawn and why that distinction matters for future work, (3) one rigorous next experiment that stays inside proved objects. Use epistemic tags where helpful. No probabilistic gap heuristics.
+							20 button Edit
+							21 button Copy
+							22 button Thought for 1m 7s
+							23 text Prime Gap Structure: current proved core, the July 2026 withdrawal, and a strictly internal next step.
+							24 container
+								25 text The gap interior
+								26 container ( p , q )
+								27 text is an ordered divisor-count field: each integer
+								28 text n
+								29 text carries its exact
+								30 container τ ( n )
+								31 text . The next prime is defined deterministically by the
+								32 text Next-Prime Rule
+								33 text [PROVED]:\n
+								34 container
+									35 text q
+									36 text =
+									37 text min
+									38 text ⁡
+									39 text {
+									40 text n
+									41 text >
+									42 text p
+									43 text :
+									44 text τ
+									45 text (
+									46 text n
+									47 text )
+									48 text =
+									49 text 2
+									50 text }
+									51 text .
+								52 text \nInside any nonempty interior the
+								53 text Gap Winner Rule (GWR)
+								54 text [PROVED, PROOF.md and LEFTMOST_MINIMUM_DIVISOR_RULE.md] selects the leftmost position
+								55 text w
+								56 text attaining\n
+								57 container
+									58 text min
+									59 text ⁡
+									60 text {
+									61 text τ
+									62 text (
+									63 text n
+									64 text )
+									65 text :
+									66 text p
+									67 text <
+									68 text n
+									69 text <
+									70 text q
+									71 text }
+								72 text \nas the unique maximizer of the comparison function\n
+								73 container
+									74 text F
+									75 text (
+									76 text n
+									77 text )
+									78 text =
+									79 text (
+									80 text 1
+									81 text −
+									82 text τ
+									83 text (
+									84 text n
+									85 text )
+									86 text /
+									87 text 2
+									88 text )
+									89 text log
+									90 text ⁡
+									91 text n
+								92 text \n(equivalently the raw-
+								93 text Z
+								94 text maximizer
+								95 container
+									96 text Z
+									97 text (
+									98 text n
+									99 text )
+									100 text =
+									101 container
+										102 text n
+										103 container 1 − τ ( n ) / 2
+								104 text , or minimizer of the zero-excess coordinate
+								105 container
+									106 text E
+									107 text (
+									108 text n
+									109 text )
+									110 text =
+									111 text (
+									112 text τ
+									113 text (
+									114 text n
+									115 text )
+									116 text /
+									117 text 2
+									118 text −
+									119 text 1
+									120 text )
+									121 text log
+									122 text ⁡
+									123 text n
+								124 text ).
+							125 text What is currently proved
+							126 content list
+								127 container Value: GWR / Interior Maximizer [PROVED]: the leftmost min-τ carrier is exactly the maximizer of F ( n ) among all interior composites.
+									128 list marker Value: •
+									129 text GWR / Interior Maximizer
+									130 text [PROVED]: the leftmost min-
+									131 text τ
+									132 text carrier is exactly the maximizer of
+									133 container F ( n )
+									134 text among all interior composites.
+								135 container Value: No-Later-Simpler-Composite Theorem [PROVED, zero violations to 10 18]: no composite after w possesses strictly smaller divisor count.
+									136 list marker Value: •
+									137 text No-Later-Simpler-Composite Theorem
+									138 text [PROVED, zero violations to
+									139 container 10 18
+									140 text ]: no composite after
+									141 text w
+									142 text possesses strictly smaller divisor count.
+								143 container Value: Universal Bounded Compression [PROVED]: the GWR witness satisfies\nw − p ≤ max ⁡ ( 64 , ⌈ 0.5 ( log ⁡ q ) 2 ⌉ ) .
+									144 list marker Value: •
+									145 text Universal Bounded Compression
+									146 text [PROVED]: the GWR witness satisfies\n
+									147 container
+										148 text w
+										149 text −
+										150 text p
+										151 text ≤
+										152 text max
+										153 text ⁡
+										154 text (
+										155 text 64
+										156 text ,
+										157 text ⌈
+										158 text 0.5
+										159 text (
+										160 text log
+										161 text ⁡
+										162 text q
+										163 container ) 2
+										164 text ⌉
+										165 text )
+										166 text .
+								167 container Value: Prime-Square Proximity Theorem [PROVED, 2026-07-05]: the same bound holds when the witness is a prime square (τ ( w ) = 3).
+									168 list marker Value: •
+									169 text Prime-Square Proximity Theorem
+									170 text [PROVED, 2026-07-05]: the same bound holds when the witness is a prime square (
+									171 container τ ( w ) = 3
+									172 text ).
+								173 container Value: Modular Lemma [REMAINS VALID]: z ( w ) ≥ 4    ⟺    30 ∣ w, where z ( w ) counts zeros in the remainder vector of w modulo the fixed primorial bases { 2 , 3 , 5 , 7 , 30 , 210 , 2310 }.
+									174 list marker Value: •
+									175 text Modular Lemma
+									176 text [REMAINS VALID]:
+									177 container
+										178 text z
+										179 text (
+										180 text w
+										181 text )
+										182 text ≥
+										183 text 4
+										184 text
+										185 text ⟺
+										186 text
+										187 text 30
+										188 text ∣
+										189 text w
+									190 text , where
+									191 container z ( w )
+									192 text counts zeros in the remainder vector of
+									193 text w
+									194 text modulo the fixed primorial bases
+									195 container
+										196 text {
+										197 text 2
+										198 text ,
+										199 text 3
+										200 text ,
+										201 text 5
+										202 text ,
+										203 text 7
+										204 text ,
+										205 text 30
+										206 text ,
+										207 text 210
+										208 text ,
+										209 text 2310
+										210 text }
+									211 text .
+							212 container
+								213 text What was withdrawn and why the distinction matters
+								214 text \nThe
+								215 text Twin-Prime Resonance / GWR Super-Signal universal implication
+								216 text [INVALIDATED 9 Jul 2026, commit 95cd67e] asserted that
+								217 container z ( w ) ≥ 4
+								218 text forces gap size
+								219 container g = 2
+								220 text . Counterexamples (e.g.,
+								221 container p = 17,666,309
+								222 text ,
+								223 container
+									224 text w
+									225 text =
+									226 text 17,666,310
+									227 text ≡
+									228 text 0
+									229 text (
+									230 container m o d
+									231 text 30
+									232 text )
+								233 text ,
+								234 container z ( w ) = 4
+								235 text ,
+								236 container g = 8
+								237 text ; likewise
+								238 container p = 22,284,029
+								239 text ) demonstrate that the modular condition can hold while later interior composites tie
+								240 container τ ( w )
+								241 text without violating GWR selection. The packaging that treated the modular fact as a corollary forcing twin gaps is therefore withdrawn.
+							242 container
+								243 text The distinction is decisive for future work: the modular lemma is pure local arithmetic on a fixed finite set of moduli and survives intact; the universal forcing claim was an over-extrapolation from GWR selection plus that lemma. Retaining only what is proved prevents downstream theorems (conditional densities, RSA-ladder arguments, or resonance-based sieves) from inheriting a non-universal pattern. Future analyses may still apply the modular filter
+								244 container z ( w ) ≥ 4
+								245 text safely to GWR witnesses for classification or conditional study, but must not assert gap-size determination from it.
+							246 container
+								247 text One rigorous next experiment inside proved objects
+								248 text \nRun a fully deterministic, machine-reproducible audit over every consecutive prime pair with next-prime
+								249 container q ≤ 10 9
+								250 text : (i) compute exact sequential
+								251 container τ ( n )
+								252 text to recover
+								253 text q
+								254 text and the interior minimum divisor count together with its leftmost occurrence
+								255 text w
+								256 text (GWR); (ii) verify that
+								257 text F
+								258 text attains its strict interior maximum at this
+								259 text w
+								260 text ; (iii) confirm no later composite has
+								261 container τ < τ ( w )
+								262 text (No-Later-Simpler-Composite); (iv) check adherence to the proved compression bound. Emit per-gap certificates (or an aggregate zero-violation log) plus a machine-readable list of all GWR witnesses satisfying the surviving modular condition
+								263 container z ( w ) ≥ 4
+								264 text .
+							265 text This experiment operates exclusively on the proved Next-Prime Rule, GWR/Interior Maximizer, No-Later-Simpler-Composite, Bounded Compression, Prime-Square Proximity, and the intact modular lemma. It generates independent, auditable verification data on fresh ground without invoking the withdrawn universal implication, thereby tightening the finite-certified envelope around the proved structural core.
+							266 button Copy
+							267 button Create share link
+							268 pop up button Like
+							269 pop up button Dislike
+							270 button Regenerate
+							271 pop up button More actions
+							272 button Explore modular arithmetic properties
+							273 button Investigate Cramer's conjecture bounds
+							274 button Reduce word count to 250
+							275 button Scroll down
+							276 container
+								277 text entry area (settable, string) Ask Grok anything
+									278 text Ask anything
+								279 pop up button Attach
+								280 pop up button Model select
+								281 button Dictation (⌃D)
+								282 button Enter voice mode (⌘⇧O)
+						283 container Notifications alt+T
+						284 text New conversation - Grok
+	285 image ID: WindowControlShadowView._shadowImageView
+	286 toolbar
+		287 container Secondary Actions: Name: Move next
+ Target:0x0
+ Selector:(null), Name: Remove from toolbar
+ Target:0x0
+ Selector:(null)
+			288 button show sidebar Help: Show sidebar ID: SidebarButton
+			289 menu button Description: Tab Group picker ID: TabGroupPickerButton?TabGroup=
+		290 container Secondary Actions: Name: Move previous
+ Target:0x0
+ Selector:(null), Name: Move next
+ Target:0x0
+ Selector:(null), Name: Remove from toolbar
+ Target:0x0
+ Selector:(null)
+			291 container ID: BackForwardSegmentedControl
+				292 button Go back Help: Show the previous page ID: BackButton
+				293 button (disabled) Go forward Help: Show the next page ID: ForwardButton
+		294 container Secondary Actions: Name: Move previous
+ Target:0x0
+ Selector:(null), Name: Move next
+ Target:0x0
+ Selector:(null), Name: Remove from toolbar
+ Target:0x0
+ Selector:(null)
+			295 button Page Menu ID: AssistantButton
+			296 button Add page to Reading List ID: OneStepBookmarkingButton
+			297 text field (settable, string) Description: smart search field ID: WEB_BROWSER_ADDRESS_AND_SEARCH_FIELD, Value: https://grok.com/c/1d90bb71-093d-4ff3-806b-47f7704db293?rid=73bf0f02-2501-4b86-aa44-9ef1c896c8c6
+			298 button Reload this page ID: ReloadButton
+		299 button Share ID: ShareButton, Secondary Actions: Name: Move previous
+ Target:0x0
+ Selector:(null), Name: Move next
+ Target:0x0
+ Selector:(null), Name: Remove from toolbar
+ Target:0x0
+ Selector:(null)
+		300 button New Tab ID: NewTabButton, Secondary Actions: Name: Move previous
+ Target:0x0
+ Selector:(null), Name: Move next
+ Target:0x0
+ Selector:(null), Name: Remove from toolbar
+ Target:0x0
+ Selector:(null)
+		301 button Tab Overview ID: TabOverviewButton, Secondary Actions: Name: Move previous
+ Target:0x0
+ Selector:(null), Name: Remove from toolbar
+ Target:0x0
+ Selector:(null)
+	302 close button
+	303 full screen button Help: this button also has an action to zoom the window, Secondary Actions: zoom the window
+	304 minimize button
+305 menu bar
+	306 Safari
+	307 File
+	308 Edit
+	309 View ID: SafariViewMenu
+	310 History
+	311 Bookmarks ID: SafariBookmarksMenu
+	312 Develop
+	313 Window ID: SafariWindowMenu
+	314 Help ID: SafariHelpMenu
+
+The focused UI element is 277 text entry area (settable, string) Ask Grok anything.

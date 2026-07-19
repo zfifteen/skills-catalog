@@ -1,0 +1,72 @@
+=== GROK FAST/EXPERT/HEAVY CU RETRY === 2026-07-12T03:37:45Z
+DOCTOR Permissions: accessibility=granted, screenRecording=granted
+
+########## MODE Fast ##########
+=== NAVIGATE grok.com ===
+NAV signals {'window': 'Grok', 'html_url': 'https://grok.com/'} ok True
+=== SELECT MODE Fast ===
+model_select 23 pop up button Model select
+mode candidates: []
+HARD STOP mode select Fast
+
+########## MODE Expert ##########
+=== NAVIGATE grok.com ===
+NAV signals {'window': 'Grok', 'html_url': 'https://grok.com/'} ok True
+=== SELECT MODE Expert ===
+model_select 23 pop up button Model select
+mode candidates: []
+HARD STOP mode select Expert
+
+########## MODE Heavy ##########
+=== NAVIGATE grok.com ===
+NAV signals {'window': 'Grok', 'html_url': 'https://grok.com/'} ok True
+=== SELECT MODE Heavy ===
+model_select 23 pop up button Model select
+mode candidates: []
+HARD STOP mode select Heavy
+
+=== FINAL FAIL ===
+{
+  "modes": {
+    "Fast": {
+      "mode": "Fast",
+      "steps": [
+        {
+          "nav": true
+        },
+        {
+          "select_mode": false
+        }
+      ],
+      "ok": false,
+      "error": "mode select failed: no menu item for Fast; menu dump saved"
+    },
+    "Expert": {
+      "mode": "Expert",
+      "steps": [
+        {
+          "nav": true
+        },
+        {
+          "select_mode": false
+        }
+      ],
+      "ok": false,
+      "error": "mode select failed: no menu item for Expert; menu dump saved"
+    },
+    "Heavy": {
+      "mode": "Heavy",
+      "steps": [
+        {
+          "nav": true
+        },
+        {
+          "select_mode": false
+        }
+      ],
+      "ok": false,
+      "error": "mode select failed: no menu item for Heavy; menu dump saved"
+    }
+  },
+  "final": "FAIL"
+}

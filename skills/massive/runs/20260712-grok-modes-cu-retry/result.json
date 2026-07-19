@@ -1,0 +1,44 @@
+{
+  "modes": {
+    "Fast": {
+      "mode": "Fast",
+      "steps": [
+        {
+          "nav": true
+        },
+        {
+          "select_mode": false
+        }
+      ],
+      "ok": false,
+      "error": "mode select failed: no menu item for Fast; menu dump saved"
+    },
+    "Expert": {
+      "mode": "Expert",
+      "steps": [
+        {
+          "nav": true
+        },
+        {
+          "select_mode": false
+        }
+      ],
+      "ok": false,
+      "error": "mode select failed: no menu item for Expert; menu dump saved"
+    },
+    "Heavy": {
+      "mode": "Heavy",
+      "steps": [
+        {
+          "nav": true
+        },
+        {
+          "select_mode": false
+        }
+      ],
+      "ok": false,
+      "error": "mode select failed: no menu item for Heavy; menu dump saved"
+    }
+  },
+  "final": "FAIL"
+}

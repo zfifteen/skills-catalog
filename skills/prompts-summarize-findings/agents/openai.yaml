@@ -1,0 +1,4 @@
+interface:
+  display_name: "Summarize Findings"
+  short_description: "Lead with the conclusion first"
+  default_prompt: "Use $prompts-summarize-findings on the current material."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Technical Design Document"
+  short_description: "Technical Design Document"
+  default_prompt: "Use $grok-task-v3-technical-design-document on the current material."

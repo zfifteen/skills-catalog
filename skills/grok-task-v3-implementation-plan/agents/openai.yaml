@@ -1,0 +1,4 @@
+interface:
+  display_name: "Implementation Plan"
+  short_description: "Implementation Plan Template Project Title [Provide a concise ti"
+  default_prompt: "Use $grok-task-v3-implementation-plan on the current material."

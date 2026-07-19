@@ -1,0 +1,6 @@
+interface:
+  display_name: "PDF"
+  short_description: "Route PDF requests to the preinstalled capability"
+  default_prompt: "Use $pdf to create, edit, or inspect a PDF artifact."
+policy:
+  allow_implicit_invocation: false

@@ -1,0 +1,112 @@
+App=com.apple.Safari (pid 66661)
+Window: "Google Gemini", App: Safari.
+0 standard window Google Gemini ID: SafariWindow?IsSecure=true&UUID=CD51C7FE-A78F-4159-BDB3-EA77FC5229C5, Secondary Actions: Raise
+	1 split group
+		2 tab group
+			3 container ID: BrowserView?IsPageLoaded=true&WebViewProcessID=71666
+				4 scroll area
+					5 HTML content Google Gemini, URL: https://gemini.google.com/app
+						6 container
+							7 button Open sidebar
+							8 button Temporary chat
+							9 container Side Navigation
+								10 container Main actions menu
+									11 link [New chat](https://gemini.google.com/app)
+									12 link [Search chats](https://gemini.google.com/search)
+								13 container Additional actions menu
+									14 link [Daily brief](https://gemini.google.com/daily-brief)
+									15 link [Images](https://gemini.google.com/images)
+									16 link [Videos](https://gemini.google.com/videos)
+									17 link [Library](https://gemini.google.com/library)
+									18 link [Gems](https://gemini.google.com/gems/view)
+								19 container
+									20 link [Google Account: Dionisio Lopez (dionisio.lopez@gmail.com)](https://accounts.google.com/SignOutOptions?continue=https://gemini.google.com)
+									21 pop up button Settings
+							22 heading Conversation with Gemini Value: 1
+								23 text Conversation with Gemini
+							24 heading Where should we start? Value: 1
+								25 text Where should we start?
+							26 container
+								27 container
+									28 text entry area (settable, string) Enter a prompt for Gemini
+										29 text Ask Gemini
+										30 container (settable, string)
+									31 text entry area (settable, string)
+								32 pop up button Upload & tools
+								33 pop up button Open mode picker, currently Pro
+								34 button Microphone
+	35 image ID: WindowControlShadowView._shadowImageView
+	36 toolbar
+		37 container Secondary Actions: Name: Move next
+ Target:0x0
+ Selector:(null), Name: Remove from toolbar
+ Target:0x0
+ Selector:(null)
+			38 button show sidebar Help: Show sidebar ID: SidebarButton
+			39 menu button Description: Tab Group picker ID: TabGroupPickerButton?TabGroup=
+		40 container Secondary Actions: Name: Move previous
+ Target:0x0
+ Selector:(null), Name: Move next
+ Target:0x0
+ Selector:(null), Name: Remove from toolbar
+ Target:0x0
+ Selector:(null)
+			41 container ID: BackForwardSegmentedControl
+				42 button Go back Help: Show the previous page ID: BackButton
+				43 button (disabled) Go forward Help: Show the next page ID: ForwardButton
+		44 container Secondary Actions: Name: Move previous
+ Target:0x0
+ Selector:(null), Name: Move next
+ Target:0x0
+ Selector:(null), Name: Remove from toolbar
+ Target:0x0
+ Selector:(null)
+			45 button Page Menu ID: AssistantButton
+			46 button (disabled) Add page to Reading List ID: OneStepBookmarkingButton
+			47 text field (settable, string) Description: smart search field ID: WEB_BROWSER_ADDRESS_AND_SEARCH_FIELD, Value: https://gemini.google.com/app
+			48 button Reload this page ID: ReloadButton
+		49 button Share ID: ShareButton, Secondary Actions: Name: Move previous
+ Target:0x0
+ Selector:(null), Name: Move next
+ Target:0x0
+ Selector:(null), Name: Remove from toolbar
+ Target:0x0
+ Selector:(null)
+		50 button New Tab ID: NewTabButton, Secondary Actions: Name: Move previous
+ Target:0x0
+ Selector:(null), Name: Move next
+ Target:0x0
+ Selector:(null), Name: Remove from toolbar
+ Target:0x0
+ Selector:(null)
+		51 button Tab Overview ID: TabOverviewButton, Secondary Actions: Name: Move previous
+ Target:0x0
+ Selector:(null), Name: Remove from toolbar
+ Target:0x0
+ Selector:(null)
+	52 tab group Description: Tab bar, 2 tabs ID: TabBar?isSeparate=false
+		53 tab Prime Gap Structure: GWR and Modular Lemmas - Grok ID: TabBarTab?isPinned=false&isNarrow=false&isActive=false, Value: off, Secondary Actions: Name:close tab
+ Target:0x903c7d180
+ Selector:_close Button Clicked:
+			54 image ID: FaviconImageView
+			55 text ID: UnifiedTabBarButton._titleTextField Prime Gap Structure: GWR and Modular Lemmas - Grok
+		56 tab Google Gemini Help: To interact with the items in this button, press Control-Option-Shift-Down Arrow. ID: TabBarTab?isPinned=false&isNarrow=false&isActive=true, Value: on, Secondary Actions: Name:close tab
+ Target:0x903c7aa00
+ Selector:_close Button Clicked:
+			57 image ID: FaviconImageView
+			58 text ID: UnifiedTabBarButton._titleTextField Google Gemini
+	59 close button
+	60 full screen button Help: this button also has an action to zoom the window, Secondary Actions: zoom the window
+	61 minimize button
+62 menu bar
+	63 Safari
+	64 File
+	65 Edit
+	66 View ID: SafariViewMenu
+	67 History
+	68 Bookmarks ID: SafariBookmarksMenu
+	69 Develop
+	70 Window ID: SafariWindowMenu
+	71 Help ID: SafariHelpMenu
+
+The focused UI element is 33 pop up button Open mode picker, currently Pro.

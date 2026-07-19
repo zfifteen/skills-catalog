@@ -1,0 +1,4 @@
+interface:
+  display_name: "Sailor Wisdom"
+  short_description: "create a summary for this but DO NOT display it."
+  default_prompt: "Use $grok-task-v3-sailor-wisdom on the current material."

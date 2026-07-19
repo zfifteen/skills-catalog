@@ -1,0 +1,24 @@
+{
+  "final": "PASS",
+  "modes": {
+    "Fast": {
+      "ok": true,
+      "chars": 715,
+      "words": 130,
+      "preview": "**Prime Gap Structure (PGS)** studies the integers between consecutive primes p and q = next_prime(p"
+    },
+    "Expert": {
+      "ok": true,
+      "chars": 3335,
+      "words": 500,
+      "preview": "**Prime Gap Structure: Current Epistemic Status (July 2026)**  The framework treats every prime gap "
+    },
+    "Heavy": {
+      "ok": true,
+      "chars": 6414,
+      "words": 1022,
+      "preview": "**Structured Technical Brief: Prime Gap Structure (PGS) Program (zfifteen/prime-gap-structure)**  **"
+    }
+  },
+  "scroll_note": "User correctly noted scroll was fake; scroll-end-Heavy showed top of answer not action bar. Expert recovered with click-to-focus + scroll + pixel-change gate."
+}

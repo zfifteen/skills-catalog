@@ -1,0 +1,9 @@
+In a system that uses content-addressed storage for large binary blobs, design a safe online garbage-collection strategy that does not block writers.
+
+Answer with exactly these four sections:
+1) Core data structures
+2) GC algorithm steps
+3) Single most common failure mode
+4) How to detect that failure in production
+
+Constraints: under 400 words; be concrete; no marketing language.

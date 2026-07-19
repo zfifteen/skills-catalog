@@ -1,0 +1,4 @@
+interface:
+  display_name: "Incremental Coder"
+  short_description: "Phase-based coding with scaffold-first commits"
+  default_prompt: "Use $incremental-coder to implement this task in scaffold, entry-point, and one-section-at-a-time phases."

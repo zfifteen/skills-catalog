@@ -1,0 +1,8 @@
+Toggle Sidebar
+
+F
+Private
+You are reviewing the Prime Gap Structure program (https://github.com/zfifteen/prime-gap-structure). Core stack: GWR / Interior Maximizer (universal), Direct next-prime rule, Universal bounded compression at CramÃ©r scale including Prime-Square Proximity Theorem (2026-07-05), NLSC zero violations through 10^18; GWR Super-Signal universal implication invalidated with CE certificates. Write a structured technical brief: (A) invariant inventory, (B) boundary of what is NOT claimed (RH, classical CramÃ©r raw gap size), (C) where a sophisticated reader might still smuggle classical random-gap thinking, (D) the single highest-leverage proof or verification task for the next 30 days. Be concrete and adversarial. 500-800 words.
+
+
+Expert

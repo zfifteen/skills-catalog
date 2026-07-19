@@ -1,0 +1,4 @@
+interface:
+  display_name: "Review Pull Request"
+  short_description: "Perform a focused PR review"
+  default_prompt: "Use $prompts-review-pull-request on the current material."

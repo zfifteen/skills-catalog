@@ -1,0 +1,16 @@
+saved 05-baseline 50840
+pill y=398 x=345-983; expert guess (873,398)
+MS 23 pop up button Model select
+=== A: element click Model select ===
+saved 05-after-element-click 50613
+A hits []
+=== B: coord click Expert (873,398) ===
+saved 05-after-coord-click 50613
+B hits []
+  ui 1 split group
+  ui 37 button Page Menu ID: AssistantButton
+  ui 38 button Add page to Reading List ID: OneStepBookmarkingButton
+  ui 51 View ID: SafariViewMenu
+  ui 53 Bookmarks ID: SafariBookmarksMenu
+  ui 55 Window ID: SafariWindowMenu
+  ui 56 Help ID: SafariHelpMenu

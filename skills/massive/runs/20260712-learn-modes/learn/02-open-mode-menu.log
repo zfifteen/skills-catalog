@@ -1,0 +1,46 @@
+Model select idx 23 pop up button Model select
+ONE click Model select
+saved 02-menu
+text_len 3132
+=== ALL lines mentioning Fast/Expert/Heavy/menu/item/option/radio/listbox ===
+31 menu button Description: Tab Group picker ID: TabGroupPickerButton?TabGroup=
+37 button Page Menu ID: AssistantButton
+47 menu bar
+51 View ID: SafariViewMenu
+53 Bookmarks ID: SafariBookmarksMenu
+55 Window ID: SafariWindowMenu
+56 Help ID: SafariHelpMenu
+=== first 40 interactive-ish lines of page ===
+3 container ID: BrowserView?IsPageLoaded=true&WebViewProcessID=66761
+6 link [Home page](https://grok.com/)
+7 button Search
+8 link
+9 link
+10 link
+11 link
+12 link
+13 button History
+14 button Toggle Sidebar
+15 pop up button F
+17 link [Switch to Private Chat](https://grok.com/c#private)
+19 text entry area (settable, string) Ask Grok anything
+21 text What do you want to know?
+22 pop up button Attach
+23 pop up button Model select
+24 button Dictation (⌃D)
+25 button Enter voice mode (⌘⇧O)
+30 button show sidebar Help: Show sidebar ID: SidebarButton
+31 menu button Description: Tab Group picker ID: TabGroupPickerButton?TabGroup=
+34 button Go back Help: Show the previous page ID: BackButton
+35 button (disabled) Go forward Help: Show the next page ID: ForwardButton
+37 button Page Menu ID: AssistantButton
+38 button Add page to Reading List ID: OneStepBookmarkingButton
+39 text field (settable, string) Description: smart search field ID: WEB_BROWSER_ADDRESS_AND_SEARCH_FIELD, Value: https://grok.com
+40 button Reload this page ID: ReloadButton
+41 button Share ID: ShareButton, Secondary Actions: Name: Move previous
+42 button New Tab ID: NewTabButton, Secondary Actions: Name: Move previous
+43 button Tab Overview ID: TabOverviewButton, Secondary Actions: Name: Move previous
+44 close button
+45 full screen button Help: this button also has an action to zoom the window, Secondary Actions: zoom the window
+46 minimize button
+47 menu bar

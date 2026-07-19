@@ -1,0 +1,27 @@
+AXButton|Search|pos=11,152|size=42x43
+AXButton|History|pos=11,429|size=42x43
+AXButton|Toggle Sidebar|pos=9,1004|size=47x47
+AXPopUpButton|F|pos=9,1059|size=47x47
+AXPopUpButton|More|pos=1615,99|size=47x47
+AXButton|Create share link|pos=1668,99|size=47x47
+AXButton|Edit|pos=1356,-2184|size=38x38
+AXButton|Edit|pos=1262,-2249|size=38x38
+AXButton|Copy|pos=1301,-2249|size=38x38
+AXButton|Thought for 32s|pos=455,-2201|size=884x33
+AXStaticText| Because the GWR witness is provably early, one can mentally fill the remaining q − w tail with “random composites” and recover the old Cramér picture. The program gives no control over tail length; adversarial large-gap constructions (e.g., primorial sieves) remain fully compatible with the invariants. The recent Super-Signal invalidation should be a red flag here: the modular zero-count that once looked like a deterministic twin-lock is now known to permit g = 8+, yet readers may still assume the surviving 30 | w lemma “almost” forces twins in a random sieve.|pos=486,-256|size=854x215
+AXButton|Copy|pos=445,825|size=38x38
+AXButton|Create share link|pos=484,825|size=38x38
+AXPopUpButton|Like|pos=524,825|size=38x38
+AXPopUpButton|Dislike|pos=563,825|size=38x38
+AXButton|Regenerate|pos=602,825|size=38x38
+AXPopUpButton|More actions|pos=641,825|size=38x38
+AXButton|241 sources|pos=680,826|size=162x36
+AXButton|Explore Lean 4 formalization details|pos=436,880|size=333x47
+AXButton|Investigate Granville's prime gap work|pos=436,931|size=353x47
+AXPopUpButton|Attach|pos=447,1027|size=47x47
+AXPopUpButton|Model select|pos=1117,1027|size=128x47
+AXButton|Dictation (⌃D)|pos=1248,1027|size=47x47
+AXButton|Enter voice mode (⌘⇧O)|pos=1299,1027|size=47x47
+AXButton|Page Menu|pos=513,46|size=30x29
+AXButton|Add page to Reading List|pos=535,45|size=24x30
+AXButton|Reload this page|pos=1189,46|size=23x29

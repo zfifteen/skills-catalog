@@ -1,0 +1,4 @@
+interface:
+  display_name: "Most Interesting Discusion"
+  short_description: "Most Interesting Discusion"
+  default_prompt: "Use $grok-task-v3-most-interesting-discusion on the current material."

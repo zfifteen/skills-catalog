@@ -1,0 +1,21 @@
+**Prime Gap Structure: Current Epistemic Status (July 2026)**
+
+The framework treats every prime gap interior as an ordered divisor-count field \(\{\tau(n)\}_{p < n < q}\). The Gap Winner Rule (GWR) [PROVED, formalized in PROOF.md] selects the leftmost composite carrying the global minimum \(\min \tau(n)\) inside that field; this position is the raw-Z maximizer under the Divisor Normalization Identity. Equivalently, it extremizes
+\[
+F(n) = \left(1 - \frac{\tau(n)}{2}\right) \log n
+\]
+(or its exponential form \(Z(n) = \exp[-(\tau(n)/2 - 1)\ln n]\)), with primes fixed at \(Z = 1\). The deterministic Next-Prime Rule follows immediately: the successor prime is the first integer after \(p\) attaining \(\tau = 2\).
+
+Supporting proved results include:
+- No-Later-Simpler-Composite Theorem [PROVED]: once the minimal \(\tau\) appears, no composite with strictly fewer divisors occurs later in the gap (monotonicity of first-arrival minima).
+- Universal Bounded Compression [PROVED]: the GWR witness lies at most \(\max(64, \lceil \frac12 (\log q)^2 \rceil)\) from \(p\).
+- Prime-Square Proximity Theorem (2026-07-05) [PROVED]: when the GWR witness is \(r^2\) for prime \(r\), the same compression bound holds.
+- The modular lemma \(z(w) \ge 4 \iff 30 \mid w\) on the fixed remainder vector of the witness [SURVIVING LEMMA].
+
+All core statements are computationally validated with zero violations through \(10^{18}\).
+
+**Withdrawn claim (2026-07-09, commit 95cd67e)**: The universal implication that four remainder zeros at the GWR witness forces gap size \(g=2\) (Twin-Prime Resonance / GWR Super-Signal). Counterexamples are documented in PROOF.md. The strong “universal lock” is therefore invalidated.
+
+**Why the distinction matters**: The structural determinism—ordered divisor field, GWR selection rule, Z/F-normalization, bounded compression, and monotonicity—remains intact and available for rigorous downstream use (deterministic generators, RSA ladder traversal, potential RH-adjacent certificates). Only the over-strong universal forcing to twin primes was withdrawn. Future work on resonance or twin-prime chambers must now treat the modular condition as necessary but insufficient, preserving epistemic hygiene and preventing propagation of an invalidated universal into cryptographic or analytic applications.
+
+**Rigorous next experiment (strictly inside proved objects)**: Using only the proved GWR definition, the surviving modular lemma, No-Later-Simpler-Composite, and Bounded Compression, construct residue-pruned candidate pools for gaps in a fresh interval beyond current validation (e.g., curated large-gap corpus or \([10^{18}, 10^{18}+10^6]\) segment). For each gap: (i) identify the GWR witness under the leftmost-min-\(\tau\) rule; (ii) confirm it is the raw-Z maximizer via direct \(F(n)\) or \(Z(n)\) evaluation; (iii) verify No-Later-Simpler-Composite holds downstream; (iv) check the observed \(p\)-to-witness distance respects the proved compression bound; (v) apply the modular filter \(z(w) \ge 4\) only on witnesses satisfying \(30 \mid w\) and record zero violations of the lemma. Log only these structural invariants. This extends the validated surface while remaining wholly inside proved statements and the surviving modular fact, without any probabilistic heuristics or withdrawn universal claims.

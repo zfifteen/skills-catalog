@@ -1,0 +1,81 @@
+App=com.apple.Safari (pid 66661)
+Window: "Failed to open page", App: Safari.
+0 standard window Failed to open page ID: SafariWindow?IsSecure=false&UUID=CD51C7FE-A78F-4159-BDB3-EA77FC5229C5, Secondary Actions: Raise
+	1 split group
+		2 tab group
+			3 container ID: BrowserView?IsPageLoaded=true&WebViewProcessID=68652
+				4 scroll area
+					5 HTML content Failed to open page, URL: safari-resource:/ErrorPage.html
+						6 text Safari Can’t Find the Server
+						7 text Safari can’t open the page “https://grok.comhttps//grok.com” because Safari can’t find the server “grok.comhttps”.
+	8 image ID: WindowControlShadowView._shadowImageView
+	9 toolbar
+		10 container Secondary Actions: Name: Move next
+ Target:0x0
+ Selector:(null), Name: Remove from toolbar
+ Target:0x0
+ Selector:(null)
+			11 button show sidebar Help: Show sidebar ID: SidebarButton
+			12 menu button Description: Tab Group picker ID: TabGroupPickerButton?TabGroup=
+		13 container Secondary Actions: Name: Move previous
+ Target:0x0
+ Selector:(null), Name: Move next
+ Target:0x0
+ Selector:(null), Name: Remove from toolbar
+ Target:0x0
+ Selector:(null)
+			14 container ID: BackForwardSegmentedControl
+				15 button Go back Help: Show the previous page ID: BackButton
+				16 button (disabled) Go forward Help: Show the next page ID: ForwardButton
+		17 container Secondary Actions: Name: Move previous
+ Target:0x0
+ Selector:(null), Name: Move next
+ Target:0x0
+ Selector:(null), Name: Remove from toolbar
+ Target:0x0
+ Selector:(null)
+			18 text field (settable, string) Description: smart search field ID: WEB_BROWSER_ADDRESS_AND_SEARCH_FIELD, Value: https://example.com, Placeholder: Search or enter website name
+			19 scroll area Secondary Actions: Scroll Up, Scroll Down
+				20 collection Description: Auto-Complete 1 Result ID: CompletionListTableView
+					21 section (disabled)
+						22 container (disabled)
+						23 container (disabled) ID: TopHit
+							24 row example.com ID: TopHit
+‎example.com
+						25 container (disabled)
+			26 image Website icon ID: UnifiedFieldIcon?IsSymbolImage=true
+			27 button Reload this page ID: ReloadButton
+		28 button Share ID: ShareButton, Secondary Actions: Name: Move previous
+ Target:0x0
+ Selector:(null), Name: Move next
+ Target:0x0
+ Selector:(null), Name: Remove from toolbar
+ Target:0x0
+ Selector:(null)
+		29 button New Tab ID: NewTabButton, Secondary Actions: Name: Move previous
+ Target:0x0
+ Selector:(null), Name: Move next
+ Target:0x0
+ Selector:(null), Name: Remove from toolbar
+ Target:0x0
+ Selector:(null)
+		30 button Tab Overview ID: TabOverviewButton, Secondary Actions: Name: Move previous
+ Target:0x0
+ Selector:(null), Name: Remove from toolbar
+ Target:0x0
+ Selector:(null)
+	31 close button
+	32 full screen button Help: this button also has an action to zoom the window, Secondary Actions: zoom the window
+	33 minimize button
+34 menu bar
+	35 Safari
+	36 File
+	37 Edit
+	38 View ID: SafariViewMenu
+	39 History
+	40 Bookmarks ID: SafariBookmarksMenu
+	41 Develop
+	42 Window ID: SafariWindowMenu
+	43 Help ID: SafariHelpMenu
+
+The focused UI element is 18 text field (settable, string) Description: smart search field ID: WEB_BROWSER_ADDRESS_AND_SEARCH_FIELD, Value: https://example.com, Placeholder: Search or enter website name.

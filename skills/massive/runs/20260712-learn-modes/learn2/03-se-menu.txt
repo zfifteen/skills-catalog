@@ -1,0 +1,9 @@
+AXMenu|missing value pos=968,566 size=277x50 center=1106.5,591.0
+AXMenuItem|Auto
+Chooses Fast or Expert pos=974,571 size=260x50 center=1104.0,596.0
+AXMenuItem|Fast
+Quick responses pos=974,631 size=260x50 center=1104.0,656.0
+AXMenuItem|Expert
+Thinks hard pos=974,691 size=260x50 center=1104.0,716.0
+AXMenuItem|Heavy
+Team of Experts pos=974,750 size=260x50 center=1104.0,775.0

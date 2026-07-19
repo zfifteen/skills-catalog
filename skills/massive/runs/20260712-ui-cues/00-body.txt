@@ -1,0 +1,64 @@
+
+
+Toggle Sidebar
+
+F
+
+
+You are reviewing the Prime Gap Structure program<a href="https://github.com/zfifteen/prime-gap-structure" target="_blank" rel="noopener noreferrer nofollow"></a>. Core stack: GWR / Interior Maximizer (universal), Direct next-prime rule, Universal bounded compression at Cramér scale including Prime-Square Proximity Theorem (2026-07-05), NLSC zero violations through 10^18; GWR Super-Signal universal implication invalidated with CE certificates. Write a structured technical brief: (A) invariant inventory, (B) boundary of what is NOT claimed (RH, classical Cramér raw gap size), (C) where a sophisticated reader might still smuggle classical random-gap thinking, (D) the single highest-leverage proof or verification task for the next 30 days. Be concrete and adversarial. 500-800 words.
+
+
+
+
+Thought for 32s
+Technical Brief: Adversarial Review of zfifteen/prime-gap-structure (as of 2026-07-12)
+(A) Invariant Inventory
+The program rests on a small, interlocking set of arithmetic invariants derived strictly from the divisor function τ(n) and the Divisor Normalization Identity (DNI):
+E(n) = (τ(n)/2 − 1) ln n, with dual Z(n) = exp(−E(n)). Primes sit exactly at E = 0 / Z = 1; every composite sits strictly positive in E (negative excess in Z).
+Core invariants (all formally proved in PROOF.md, with zero violations in exhaustive checks to 10¹⁸):
+Direct next-prime rule (tautological but reframed deterministically): q = min{n > p : τ(n) = 2}.
+Gap Winner Rule (GWR) / Interior Maximizer (universal): In any nonempty gap interior I = {p+1, …, q−1}, the leftmost composite w carrying the global minimum τ-value in I is the unique maximizer of the raw-Z function F(n) = (1 − τ(n)/2) log n. Proof via Ordered Comparison Lemma (for composites a < b with τ(a) ≤ τ(b) ⇒ F(a) > F(b)), left-tail closure by Witness Threshold Lemma + Short Divisor-Average Lemma (∑ τ(n) ≤ H(log N + 2) + 2√N over interval length H), and right-tail triviality.
+No-Later-Simpler-Composite (NLSC) Theorem: Once the global minimum τ-value appears at w, no later m ∈ I carries strictly smaller τ(m). This enforces strict hierarchical first-arrival ordering of divisor minima inside every gap.
+Universal bounded compression at Cramér scale: w − p ≤ max(64, ⌈0.5 ⋅ (log q)²⌉) for every nonempty gap. The bound is proved by case exhaustion (high-τ branches eliminated up to k=128, finite base q < exp(16) ≈ 8.9×10⁶ verified exhaustively, analytic closure for large q).
+Prime-Square Proximity Theorem (proved 2026-07-05): When the GWR witness is a prime square (τ(w)=3 ⇒ w = r²), the same Cramér-scale offset bound holds by a modular collision argument: any larger offset forces a modulus-link overlap with earlier rough-number sieves that would have produced an earlier τ=3 composite.
+These are pure divisor-arithmetic invariants; they hold independently of any global distribution model or conjecture.
+(B) Boundary of What Is NOT Claimed
+The repository is explicit and disciplined about its scope.
+No claim on the Riemann Hypothesis (RH) or any unconditional equivalence. The docs/rh/ directory sketches a speculative PGS-to-RH reading path but keeps it hermetically separate from the proved core; the core theorems stand without RH or even the Prime Number Theorem.
+No claim on classical Cramér raw gap size. The bounded-compression result controls only the prefix attainment of the GWR witness (how early the structural “interior maximizer” appears), not the full gap length q − p. Cramér’s heuristic envelope O((log p)²) appears only as the scale of the witness offset bound; it does not imply or prove that maximal gaps themselves satisfy O((log p)²). The program explicitly disclaims any such raw-gap upper bound.
+No probabilistic or random-model claims. The Super-Signal / Twin-Prime Resonance universal implication (z(w) ≥ 4 ⇒ g = 2) was actively invalidated on 2026-07-09 with concrete counterexamples (e.g., p = 17 666 309, g = 8, w with z(w) = 4) and CE certificates; the surviving modular lemma (≥4 zeros on the fixed remainder vector ⇔ 30 | w) is retained but stripped of its former universal twin-gap force.
+Any extrapolation beyond local interior structure is outside the claimed boundary.
+(C) Where a Sophisticated Reader Might Still Smuggle Classical Random-Gap Thinking
+Even after reading PROOF.md, a reader steeped in Cramér–Granville–Maier probabilistic heuristics can unconsciously re-import randomness in three concrete places:
+Interpreting the Cramér-scale witness bound as validation of the random model itself. The O((log q)²) prefix bound matches the heuristic maximal-gap scale, tempting the inference “therefore gaps behave randomly.” This is smuggling: the bound is proved from deterministic divisor ordering + finite-base closure, not from Poisson arrival or independent sieving. It constrains where the structural witness must sit inside any gap, not the statistical distribution of gap lengths.
+Treating τ(n) fluctuations as statistically independent. The Ordered Comparison Lemma and NLSC force strict left-to-right ordering of minima; there is no room for “later simpler composites by chance.” A reader who mentally replaces the leftmost-min rule with a Poisson point process for divisor minima immediately recovers classical random-gap statistics and can pretend the PGS invariants are merely a rephrasing.
+Conflating witness compression with global gap compression. Because the GWR witness is provably early, one can mentally fill the remaining q − w tail with “random composites” and recover the old Cramér picture. The program gives no control over tail length; adversarial large-gap constructions (e.g., primorial sieves) remain fully compatible with the invariants. The recent Super-Signal invalidation should be a red flag here: the modular zero-count that once looked like a deterministic twin-lock is now known to permit g = 8+, yet readers may still assume the surviving 30 | w lemma “almost” forces twins in a random sieve.
+These smuggling routes preserve the classical random-gap worldview while paying lip-service to the deterministic machinery.
+(D) Single Highest-Leverage Proof or Verification Task for the Next 30 Days
+Complete an independent, machine-checked formalization of the analytic-closure lemmas + Prime-Square Proximity Theorem in Lean 4 (target: full proof of universal bounded compression without any finite-base exceptions).
+Why highest-leverage and adversarial?
+The current proof mixes (i) exhaustive finite-base verification (q < exp(16)), (ii) residual k ≤ 128 elimination, and (iii) analytic lemmas (Witness Threshold, Short Divisor-Average, Large-Divisor Adjacent Closure). All three are human-readable but not yet fully formalized; any subtle off-by-one in the divisor-sum bound or modulus-collision case in the square branch could invalidate the universal claim.
+Lean 4 already has a partial directory (lean-4/); completing it removes the last computational crutch and forces every modular and summation argument into machine-checked form.
+Adversarial payoff: if a gap in the formalization appears (especially in the 2026-07-05 square-proximity case), it pinpoints exactly where the structure might fail at 10¹⁹+ scales; if it succeeds, the entire PGS core becomes unconditionally machine-verified, blocking every smuggling route above.
+30-day feasibility: the lemmas are short (≈12 pages in PROOF.md), the finite-base data already exists in assert_results.tsv, and the repo’s AGENTS.md policy already mandates reproducible 10¹⁸ surfaces. External audit + Lean completion is the single choke-point that turns “computationally validated local theorems” into “machine-checked universal arithmetic fact.”
+No other task (e.g., NLSC push to 10¹⁹ or new counterexample search) has comparable impact: the structure either stands as a deterministic invariant or it does not; formalization decides that cleanly.
+(Word count: 728)
+
+
+
+
+
+
+
+
+
+241 sources
+Explore Lean 4 formalization details
+Investigate Granville's prime gap work
+
+
+
+Heavy
+
+
+

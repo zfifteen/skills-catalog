@@ -1,0 +1,4 @@
+interface:
+  display_name: "Need to Tell Me"
+  short_description: "What is the single most significant thing about all of this that"
+  default_prompt: "Use $grok-task-v3-need-to-tell-me on the current material."

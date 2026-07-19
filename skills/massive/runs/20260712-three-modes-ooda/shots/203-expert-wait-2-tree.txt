@@ -1,0 +1,139 @@
+App=com.apple.Safari (pid 66661)
+Window: "New conversation - Grok", App: Safari.
+0 standard window New conversation - Grok ID: SafariWindow?IsSecure=true&UUID=CD51C7FE-A78F-4159-BDB3-EA77FC5229C5, Secondary Actions: Raise
+	1 split group
+		2 tab group
+			3 container ID: BrowserView?IsPageLoaded=true&WebViewProcessID=68862
+				4 scroll area
+					5 HTML content New conversation - Grok, URL: https://grok.com/c/4d9993bf-f3e2-4d79-8ff9-62e1cef267a4?rid=d0849f20-0312-4bc2-8114-12e1eaf6ee8e
+						6 link [Home page](https://grok.com/)
+						7 button Search
+						8 link
+						9 link
+						10 link
+						11 link
+						12 link
+						13 button History
+						14 button Toggle Sidebar
+						15 pop up button F
+						16 container
+							17 pop up button More
+							18 text Prime Gap Structure<a href="https://github.com/zfifteen/prime-gap-structure" target="_blank" rel="noopener noreferrer nofollow"></a>: the gap interior is an ordered divisor-count field; GWR selects the leftmost min-tau witness; F(n)=(1-tau(n)/2) log n. The Twin-Prime Resonance / GWR Super-Signal universal implication is invalidated (July 2026) while the modular lemma z(w)>=4 iff 30|w remains. Task: give a precise 250-400 word technical summary of (1) what is currently proved, (2) what was withdrawn and why that distinction matters for future work, (3) one rigorous next experiment that stays inside proved objects. Use epistemic tags where helpful. No probabilistic gap heuristics.
+							19 button Edit
+							20 button Copy
+							21 button Thought for 45s
+							22 text Prime Gap Structure: Current Epistemic Status (July 2026)
+							23 container
+								24 text The
+								25 text framework
+								26 text treats
+								27 text every
+								28 text prime
+								29 text gap
+								30 text interior
+								31 text as
+								32 text an
+								33 text ordered
+								34 text divisor-count
+								35 text field
+								36 container
+									37 text {
+									38 text τ
+									39 text (
+									40 text n
+									41 text )
+									42 container } p < n < q
+								43 text .
+								44 text The
+								45 text Gap
+								46 text Winner
+								47 text Rule
+								48 text (GWR)
+								49 text [PROVED,
+								50 text formalized
+								51 text in
+								52 text PROOF.md]
+								53 text selects
+								54 text the
+								55 text leftmost
+								56 text composite
+								57 text carrying
+								58 text the
+								59 text global
+								60 text minimum
+								61 container min ⁡ τ ( n )
+								62 text inside
+								63 text that
+							64 container
+								65 text entry area (settable, string) Ask Grok anything
+									66 text Ask anything
+								67 pop up button Attach
+								68 pop up button Model select
+								69 button Dictation (⌃D)
+								70 button Stop model response
+						71 container Notifications alt+T
+						72 text New conversation - Grok
+	73 image ID: WindowControlShadowView._shadowImageView
+	74 toolbar
+		75 container Secondary Actions: Name: Move next
+ Target:0x0
+ Selector:(null), Name: Remove from toolbar
+ Target:0x0
+ Selector:(null)
+			76 button show sidebar Help: Show sidebar ID: SidebarButton
+			77 menu button Description: Tab Group picker ID: TabGroupPickerButton?TabGroup=
+		78 container Secondary Actions: Name: Move previous
+ Target:0x0
+ Selector:(null), Name: Move next
+ Target:0x0
+ Selector:(null), Name: Remove from toolbar
+ Target:0x0
+ Selector:(null)
+			79 container ID: BackForwardSegmentedControl
+				80 button Go back Help: Show the previous page ID: BackButton
+				81 button (disabled) Go forward Help: Show the next page ID: ForwardButton
+		82 container Secondary Actions: Name: Move previous
+ Target:0x0
+ Selector:(null), Name: Move next
+ Target:0x0
+ Selector:(null), Name: Remove from toolbar
+ Target:0x0
+ Selector:(null)
+			83 button Page Menu ID: AssistantButton
+			84 button Add page to Reading List ID: OneStepBookmarkingButton
+			85 text field (settable, string) Description: smart search field ID: WEB_BROWSER_ADDRESS_AND_SEARCH_FIELD, Value: https://grok.com/c/4d9993bf-f3e2-4d79-8ff9-62e1cef267a4?rid=d0849f20-0312-4bc2-8114-12e1eaf6ee8e
+			86 button Reload this page ID: ReloadButton
+		87 button Share ID: ShareButton, Secondary Actions: Name: Move previous
+ Target:0x0
+ Selector:(null), Name: Move next
+ Target:0x0
+ Selector:(null), Name: Remove from toolbar
+ Target:0x0
+ Selector:(null)
+		88 button New Tab ID: NewTabButton, Secondary Actions: Name: Move previous
+ Target:0x0
+ Selector:(null), Name: Move next
+ Target:0x0
+ Selector:(null), Name: Remove from toolbar
+ Target:0x0
+ Selector:(null)
+		89 button Tab Overview ID: TabOverviewButton, Secondary Actions: Name: Move previous
+ Target:0x0
+ Selector:(null), Name: Remove from toolbar
+ Target:0x0
+ Selector:(null)
+	90 close button
+	91 full screen button Help: this button also has an action to zoom the window, Secondary Actions: zoom the window
+	92 minimize button
+93 menu bar
+	94 Safari
+	95 File
+	96 Edit
+	97 View ID: SafariViewMenu
+	98 History
+	99 Bookmarks ID: SafariBookmarksMenu
+	100 Develop
+	101 Window ID: SafariWindowMenu
+	102 Help ID: SafariHelpMenu
+
+The focused UI element is 65 text entry area (settable, string) Ask Grok anything.

@@ -1,0 +1,11 @@
+saved 09-with-dialog
+=== permission / dialog lines ===
+CURSOR click coords for Don't Allow ~ center bottom of dialog
+saved 09-after-dismiss
+dialog still? False
+Model select 23
+CURSOR click Model select 23
+saved 09-mode-menu
+=== after Model select cursor click ===
+38 button Add page to Reading List ID: OneStepBookmarkingButton
+done

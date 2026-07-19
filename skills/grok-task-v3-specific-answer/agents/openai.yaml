@@ -1,0 +1,4 @@
+interface:
+  display_name: "Specific Answer"
+  short_description: "Using your advanced computational abilities formulate the single"
+  default_prompt: "Use $grok-task-v3-specific-answer on the current material."

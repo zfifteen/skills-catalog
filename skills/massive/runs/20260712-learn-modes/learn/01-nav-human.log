@@ -1,0 +1,11 @@
+STEP: focus URL bar via Meta+l, type grok.com, Return (NO new tab)
+saved 01-after-nav png
+Window: Grok
+HTML: https://grok.com/
+tabs: ['tab group']
+=== mode-related ===
+15 pop up button F
+19 text entry area (settable, string) Ask Grok anything
+22 pop up button Attach
+23 pop up button Model select
+on_grok True

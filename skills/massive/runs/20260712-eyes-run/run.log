@@ -1,0 +1,71 @@
+URL=https://grok.com/
+menu raw:
+Auto|1104.0|596.0
+Fast|1104.0|656.0
+Expert|1104.0|716.0
+Heavy|1104.0|775.0
+CLICK Fast (1104.0,656.0)
+menu_still=False Model select=True AskGrok=True
+focus composer 19
+paste_ok=True
+SEND
+URL after send=https://grok.com/c/62149c6c-09e1-4d4f-873b-6f220cce1f33?rid=db663cec-46b4-4282-ae5a-fab3df03445c
+len tree=4221
+FAST_SENT
+wait t=0s gen=False markers=6 body_len=1191 stable=0
+wait t=4s gen=False markers=6 body_len=1191 stable=1
+wait t=8s gen=False markers=6 body_len=1191 stable=2
+FAST_HARVEST chars=1191 words≈203
+URL=https://grok.com/c/62149c6c-09e1-4d4f-873b-6f220cce1f33?rid=db663cec-46b4-4282-ae5a-fab3df03445c
+======== EXPERT ========
+URL=https://grok.com/c/62149c6c-09e1-4d4f-873b-6f220cce1f33?rid=db663cec-46b4-4282-ae5a-fab3df03445c
+in conversation — go home via page control
+  click Home page link idx=6
+home ok=True url=https://grok.com/
+  Model select: FOUND|1134,515,111,47
+  menu=['Auto', 'Fast', 'Expert', 'Heavy']
+select Expert: True ok
+paste_send Expert: True sent
+  wait expert t=0s gen=True markers=7 len=758 stable=0
+  wait expert t=5s gen=True markers=7 len=771 stable=0
+  wait expert t=9s gen=True markers=7 len=1023 stable=0
+  wait expert t=14s gen=True markers=7 len=1023 stable=0
+  wait expert t=18s gen=True markers=7 len=1023 stable=0
+  wait expert t=23s gen=True markers=7 len=1023 stable=0
+  wait expert t=27s gen=True markers=7 len=1021 stable=0
+  wait expert t=32s gen=True markers=7 len=1021 stable=0
+  wait expert t=37s gen=True markers=7 len=1023 stable=0
+  wait expert t=41s gen=True markers=7 len=940 stable=0
+  wait expert t=46s gen=True markers=7 len=940 stable=0
+  wait expert t=50s gen=True markers=7 len=915 stable=0
+  wait expert t=55s gen=True markers=7 len=938 stable=0
+  wait expert t=59s gen=True markers=7 len=938 stable=0
+  wait expert t=64s gen=True markers=7 len=903 stable=0
+  wait expert t=72s gen=True markers=7 len=3551 stable=0
+  wait expert t=78s gen=False markers=7 len=4866 stable=0
+  wait expert t=83s gen=False markers=7 len=4866 stable=1
+  wait expert t=88s gen=False markers=7 len=4866 stable=2
+  HARVEST expert chars=4866 words≈834
+EXPERT_OK
+======== HEAVY ========
+URL=https://grok.com/c/1d90bb71-093d-4ff3-806b-47f7704db293?rid=73bf0f02-2501-4b86-aa44-9ef1c896c8c6
+  Home page idx=6
+  after home url=https://grok.com/
+  Model select: FOUND|1116,515,129,47
+  menu=['Auto', 'Fast', 'Expert', 'Heavy']
+select Heavy: True ok
+paste_send Heavy: True sent
+  wait heavy t=0s gen=True markers=7 len=848 stable=0
+  wait heavy t=6s gen=True markers=7 len=1134 stable=0
+  wait heavy t=11s gen=True markers=7 len=1135 stable=0
+  wait heavy t=17s gen=True markers=7 len=1091 stable=0
+  wait heavy t=23s gen=True markers=10 len=3940 stable=0
+  wait heavy t=29s gen=True markers=8 len=2714 stable=0
+  wait heavy t=35s gen=True markers=10 len=4460 stable=0
+  wait heavy t=41s gen=False markers=10 len=7914 stable=0
+  wait heavy t=47s gen=False markers=10 len=7990 stable=0
+  wait heavy t=52s gen=False markers=10 len=7990 stable=1
+  wait heavy t=58s gen=False markers=10 len=7990 stable=2
+  HARVEST heavy chars=7990 words≈1271
+HEAVY_OK
+RESULT PASS

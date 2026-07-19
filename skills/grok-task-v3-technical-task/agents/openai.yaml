@@ -1,0 +1,4 @@
+interface:
+  display_name: "Technical Task"
+  short_description: "Turn this into a technical issue description suitable for GitHub"
+  default_prompt: "Use $grok-task-v3-technical-task on the current material."

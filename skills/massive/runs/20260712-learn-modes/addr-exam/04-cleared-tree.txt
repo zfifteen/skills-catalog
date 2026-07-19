@@ -1,0 +1,129 @@
+App=com.apple.Safari (pid 66661)
+Window: "Failed to open page", App: Safari.
+0 standard window Failed to open page ID: SafariWindow?IsSecure=false&UUID=CD51C7FE-A78F-4159-BDB3-EA77FC5229C5, Secondary Actions: Raise
+	1 split group
+		2 tab group
+			3 container ID: BrowserView?IsPageLoaded=true&WebViewProcessID=68652
+				4 scroll area
+					5 HTML content Failed to open page, URL: safari-resource:/ErrorPage.html
+						6 text Safari Can’t Find the Server
+						7 text Safari can’t open the page “https://grok.comhttps//grok.com” because Safari can’t find the server “grok.comhttps”.
+	8 image ID: WindowControlShadowView._shadowImageView
+	9 toolbar
+		10 container Secondary Actions: Name: Move next
+ Target:0x0
+ Selector:(null), Name: Remove from toolbar
+ Target:0x0
+ Selector:(null)
+			11 button show sidebar Help: Show sidebar ID: SidebarButton
+			12 menu button Description: Tab Group picker ID: TabGroupPickerButton?TabGroup=
+		13 container Secondary Actions: Name: Move previous
+ Target:0x0
+ Selector:(null), Name: Move next
+ Target:0x0
+ Selector:(null), Name: Remove from toolbar
+ Target:0x0
+ Selector:(null)
+			14 container ID: BackForwardSegmentedControl
+				15 button Go back Help: Show the previous page ID: BackButton
+				16 button (disabled) Go forward Help: Show the next page ID: ForwardButton
+		17 container Secondary Actions: Name: Move previous
+ Target:0x0
+ Selector:(null), Name: Move next
+ Target:0x0
+ Selector:(null), Name: Remove from toolbar
+ Target:0x0
+ Selector:(null)
+			18 button Show Search Menu ID: UnifiedField._magnifyingGlassButton
+			19 text field (settable, string) Description: smart search field ID: WEB_BROWSER_ADDRESS_AND_SEARCH_FIELD, Placeholder: Search or enter website name
+			20 scroll area Secondary Actions: Scroll Up, Scroll Down
+				21 collection Description: Auto-Complete 21 Results ID: CompletionListTableView
+					22 section (disabled)
+						23 container (disabled)
+						24 container (disabled) ID: CompletionListSearchEnginePicker
+							25 row Google ID: CompletionListSearchEnginePicker
+						26 container (disabled) ID: CompletionListSearchEnginePicker
+							27 row Yahoo ID: CompletionListSearchEnginePicker
+						28 container (disabled) ID: CompletionListSearchEnginePicker
+							29 row Bing ID: CompletionListSearchEnginePicker
+						30 container (disabled) ID: CompletionListSearchEnginePicker
+							31 row DuckDuckGo ID: CompletionListSearchEnginePicker
+						32 container (disabled) ID: CompletionListSearchEnginePicker
+							33 row Ecosia ID: CompletionListSearchEnginePicker
+						34 text (disabled) Description: Search Engine
+						35 container (disabled)
+					36 section (disabled)
+						37 container (disabled)
+						38 container (disabled) ID: SearchSuggestion
+							39 row segway e-bike ID: SearchSuggestion
+						40 container (disabled) ID: SearchSuggestion
+							41 row movies west mifflin ID: SearchSuggestion
+						42 container (disabled) ID: SearchSuggestion
+							43 row ngrok signup ID: SearchSuggestion
+						44 container (disabled) ID: SearchSuggestion
+							45 row gmail ID: SearchSuggestion
+						46 container (disabled) ID: SearchSuggestion
+							47 row twillio ID: SearchSuggestion
+						48 container (disabled) ID: SearchSuggestion
+							49 row aio assist ID: SearchSuggestion
+						50 container (disabled) ID: SearchSuggestion
+							51 row walmart near me ID: SearchSuggestion
+						52 container (disabled) ID: SearchSuggestion
+							53 row super 8 cranberry ID: SearchSuggestion
+						54 container (disabled) ID: SearchSuggestion
+							55 row suite rental near me ID: SearchSuggestion
+						56 container (disabled) ID: SearchSuggestion
+							57 row https://www.amazon.com/s?k=vevor+snowflake+ice+machine ID: SearchSuggestion
+						58 container (disabled) ID: SearchSuggestion
+							59 row https://www.amazon.com/dp/B0F944S6M2 ID: SearchSuggestion
+						60 container (disabled) ID: SearchSuggestion
+							61 row the. cure lullaby lyrics ID: SearchSuggestion
+						62 container (disabled) ID: SearchSuggestion
+							63 row pittsburgh events calendar ID: SearchSuggestion
+						64 container (disabled) ID: SearchSuggestion
+							65 row sert-2 satellite ID: SearchSuggestion
+						66 container (disabled) ID: SearchSuggestion
+							67 row renters insurance ID: SearchSuggestion
+						68 text (disabled) Description: Recent Searches
+						69 container (disabled)
+					70 section (disabled)
+						71 container (disabled)
+						72 container (disabled) ID: CompletionListAction
+							73 row Clear Recent Searches ID: CompletionListAction
+						74 container (disabled)
+						75 container (disabled)
+			76 button Reload this page ID: ReloadButton
+		77 button Share ID: ShareButton, Secondary Actions: Name: Move previous
+ Target:0x0
+ Selector:(null), Name: Move next
+ Target:0x0
+ Selector:(null), Name: Remove from toolbar
+ Target:0x0
+ Selector:(null)
+		78 button New Tab ID: NewTabButton, Secondary Actions: Name: Move previous
+ Target:0x0
+ Selector:(null), Name: Move next
+ Target:0x0
+ Selector:(null), Name: Remove from toolbar
+ Target:0x0
+ Selector:(null)
+		79 button Tab Overview ID: TabOverviewButton, Secondary Actions: Name: Move previous
+ Target:0x0
+ Selector:(null), Name: Remove from toolbar
+ Target:0x0
+ Selector:(null)
+	80 close button
+	81 full screen button Help: this button also has an action to zoom the window, Secondary Actions: zoom the window
+	82 minimize button
+83 menu bar
+	84 Safari
+	85 File
+	86 Edit
+	87 View ID: SafariViewMenu
+	88 History
+	89 Bookmarks ID: SafariBookmarksMenu
+	90 Develop
+	91 Window ID: SafariWindowMenu
+	92 Help ID: SafariHelpMenu
+
+The focused UI element is 19 text field (settable, string) Description: smart search field ID: WEB_BROWSER_ADDRESS_AND_SEARCH_FIELD, Placeholder: Search or enter website name.

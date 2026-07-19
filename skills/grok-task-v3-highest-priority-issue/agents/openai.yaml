@@ -1,0 +1,4 @@
+interface:
+  display_name: "Highest Priority Issue"
+  short_description: "ROLE You are a meticulous repo analyst."
+  default_prompt: "Use $grok-task-v3-highest-priority-issue on the current material."

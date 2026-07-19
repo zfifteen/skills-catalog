@@ -1,0 +1,87 @@
+MS 22 pop up button Model select
+=== open with Space ===
+len 3959
+22 pop up button Model select
+30 menu button Description: Tab Group picker ID: TabGroupPickerButton?TabGroup=
+36 button Page Menu ID: AssistantButton
+37 button (disabled) Add page to Reading List ID: OneStepBookmarkingButton
+50 tab Grok Help: To interact with the items in this button, press Control-Option-Shift-Down Arrow. ID: TabBarTab?isPinned=false&isNarrow=false&isActive=true, Value: on, Secondary Actions: Name:close tab
+53 menu bar
+57 View ID: SafariViewMenu
+59 Bookmarks ID: SafariBookmarksMenu
+61 Window ID: SafariWindowMenu
+62 Help ID: SafariHelpMenu
+--- head content ---
+0 standard window Grok ID: SafariWindow?IsSecure=true&UUID=EE6545D4-7503-44B0-8F78-37178AE1DD26, Secondary Actions: Raise
+1 split group
+2 tab group
+3 container ID: BrowserView?IsPageLoaded=true&WebViewProcessID=66153
+4 scroll area
+5 HTML content Grok, URL: https://grok.com/
+6 link [Home page](https://grok.com/)
+7 button Search
+8 link
+9 link
+10 link
+11 link
+12 link
+13 button History
+14 button Toggle Sidebar
+15 pop up button F
+16 container
+17 link [Switch to Private Chat](https://grok.com/c#private)
+18 container
+19 text entry area (settable, string) Ask Grok anything
+20 container (settable, string)
+21 pop up button Attach
+22 pop up button Model select
+23 button Dictation (⌃D)
+24 button Submit
+25 container Notifications alt+T
+26 image ID: WindowControlShadowView._shadowImageView
+27 toolbar
+28 container Secondary Actions: Name: Move next
+29 button show sidebar Help: Show sidebar ID: SidebarButton
+30 menu button Description: Tab Group picker ID: TabGroupPickerButton?TabGroup=
+31 container Secondary Actions: Name: Move previous
+32 container ID: BackForwardSegmentedControl
+33 button Go back Help: Show the previous page ID: BackButton
+34 button (disabled) Go forward Help: Show the next page ID: ForwardButton
+35 container Secondary Actions: Name: Move previous
+36 button Page Menu ID: AssistantButton
+37 button (disabled) Add page to Reading List ID: OneStepBookmarkingButton
+38 text field (settable, string) Description: smart search field ID: WEB_BROWSER_ADDRESS_AND_SEARCH_FIELD, Value: https://grok.com
+39 button Reload this page ID: ReloadButton
+40 button Share ID: ShareButton, Secondary Actions: Name: Move previous
+41 button New Tab ID: NewTabButton, Secondary Actions: Name: Move previous
+42 button Tab Overview ID: TabOverviewButton, Secondary Actions: Name: Move previous
+43 tab group Description: Tab bar, 3 tabs ID: TabBar?isSeparate=false
+44 tab Grok ID: TabBarTab?isPinned=false&isNarrow=false&isActive=false, Value: off, Secondary Actions: Name:close tab
+45 image ID: FaviconImageView
+=== ArrowDown x5 with snapshots ===
+arrow 0 hits: []
+  model_select line: pop up button Model select
+  popup 15 pop up button F
+  popup 21 pop up button Attach
+  popup 22 pop up button Model select
+arrow 1 hits: []
+  model_select line: pop up button Model select
+  popup 15 pop up button F
+  popup 21 pop up button Attach
+  popup 22 pop up button Model select
+arrow 2 hits: []
+  model_select line: pop up button Model select
+  popup 15 pop up button F
+  popup 21 pop up button Attach
+  popup 22 pop up button Model select
+arrow 3 hits: []
+  model_select line: pop up button Model select
+  popup 15 pop up button F
+  popup 21 pop up button Attach
+  popup 22 pop up button Model select
+arrow 4 hits: [('25', 'button Enter voice mode (⌘⇧O)')]
+  model_select line: pop up button Model select
+  popup 15 pop up button F
+  popup 22 pop up button Attach
+  popup 23 pop up button Model select
+=== Escape then try Return open ===

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Review Issue Description"
+  short_description: "Critique a GitHub issue description"
+  default_prompt: "Use $prompts-review-issue-description on the current material."

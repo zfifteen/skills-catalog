@@ -1,0 +1,4 @@
+interface:
+  display_name: "User Story"
+  short_description: "Turn this into a detailed User Story with links to github for ex"
+  default_prompt: "Use $grok-task-v3-user-story on the current material."

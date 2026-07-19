@@ -1,0 +1,152 @@
+App=com.apple.Safari (pid 66661)
+Window: "Start Page", App: Safari.
+0 standard window Start Page ID: SafariWindow?IsSecure=false&UUID=16668796-D167-487E-B2DF-3C5342875158, Secondary Actions: Raise
+	1 split group
+		2 tab group
+			3 scroll area Secondary Actions: Scroll Up, Scroll Down
+				4 collection StartPageCollectionView
+					5 section (disabled) favoritesItemIdentifier Description: LLMs - Favorites
+						6 container (disabled)
+							7 container ID: favoritesItemIdentifierHeader
+								8 button (disabled) LLMs - Favorites
+						9 button (disabled) Claude ID: linkRecommendationCollectionViewItem
+							10 image ID: StartPageTouchIconViewItem._iconView
+							11 button Claude ID: StartPageTouchIconViewItem._titleTextField, Value: Claude
+						12 button (disabled) Copilot ID: linkRecommendationCollectionViewItem
+							13 image ID: StartPageTouchIconViewItem._iconView
+							14 button Copilot ID: StartPageTouchIconViewItem._titleTextField, Value: Copilot
+						15 button (disabled) DeepSeek ID: linkRecommendationCollectionViewItem
+							16 image ID: StartPageTouchIconViewItem._iconView
+							17 button DeepSeek ID: StartPageTouchIconViewItem._titleTextField, Value: DeepSeek
+						18 button (disabled) Grok ID: linkRecommendationCollectionViewItem
+							19 image ID: StartPageTouchIconViewItem._iconView
+							20 button Grok ID: StartPageTouchIconViewItem._titleTextField, Value: Grok
+						21 button (disabled) ChatGPT ID: linkRecommendationCollectionViewItem
+							22 image ID: StartPageTouchIconViewItem._iconView
+							23 button ChatGPT ID: StartPageTouchIconViewItem._titleTextField, Value: ChatGPT
+						24 button (disabled) Perplexity ID: linkRecommendationCollectionViewItem
+							25 image ID: StartPageTouchIconViewItem._iconView
+							26 button Perplexity ID: StartPageTouchIconViewItem._titleTextField, Value: Perplexity
+						27 button (disabled) Google Gemini ID: linkRecommendationCollectionViewItem
+							28 image ID: StartPageTouchIconViewItem._iconView
+							29 button Google Gemini ID: StartPageTouchIconViewItem._titleTextField, Value: Google Gemini
+						30 button (disabled) Untitled20.ipynb - Colab ID: linkRecommendationCollectionViewItem
+							31 image ID: StartPageTouchIconViewItem._iconView
+							32 button Untitled20.ipynb - Colab ID: StartPageTouchIconViewItem._titleTextField, Value: Untitled20.ipynb - Colab
+						33 container (disabled)
+					34 section (disabled) suggestionsItemIdentifier Description: Suggestions
+						35 container (disabled)
+							36 container ID: suggestionsItemIdentifierHeader
+								37 button (disabled) Suggestions
+						38 button (disabled) YouTube - youtube.com ID: highlightItem
+							39 link YouTube\nyoutube.com
+								40 text ID: _relativeDateTextField 4 days ago
+								41 text YouTube
+								42 text youtube.com
+								43 image
+						44 button (disabled) Home / X - x.com ID: highlightItem
+							45 link Home / X\nx.com
+								46 text ID: _relativeDateTextField Today
+								47 text Home / X
+								48 text x.com
+								49 image
+						50 button (disabled) Inbox  - dionisio.lopez@gmail.com - Gmail - mail.google.com ID: highlightItem
+							51 link Inbox  - dionisio.lopez@gmail.com - Gmail\nmail.google.com
+								52 text ID: _relativeDateTextField Yesterday
+								53 text Inbox  - dionisio.lopez@gmail.com - Gmail
+								54 text mail.google.com
+								55 image
+						56 button (disabled) GitHub - github.com ID: highlightItem
+							57 link GitHub\ngithub.com
+								58 text ID: _relativeDateTextField Today
+								59 text GitHub
+								60 text github.com
+								61 image
+						62 button (disabled) Stream TV, Watch Live Television Online | DIRECTV - stream.directv.com ID: highlightItem
+							63 link Stream TV, Watch Live Television Online | DIRECTV\nstream.directv.com
+								64 text ID: _relativeDateTextField 5 days ago
+								65 text Stream TV, Watch Live Television Online | DIRECTV
+								66 text stream.directv.com
+								67 image
+						68 button (disabled) Chaturbate - Free Adult Webcams, Live Sex, Free Sex Chat, Exhibitionist & Pornstar Free Cams - chaturbate.com ID: highlightItem
+							69 link Chaturbate - Free Adult Webcams, Live Sex, Free Sex Chat, Exhibitionist & Pornstar Free Cams\nchaturbate.com
+								70 text ID: _relativeDateTextField 5 days ago
+								71 text Chaturbate - Free Adult Webcams, Live Sex, Free Sex Chat, Exhibitionist & Pornstar Free Cams
+								72 text chaturbate.com
+								73 image
+						74 button (disabled) VA.gov Home | Veterans Affairs - va.gov ID: highlightItem
+							75 link VA.gov Home | Veterans Affairs\nva.gov
+								76 text ID: _relativeDateTextField Last week
+								77 text VA.gov Home | Veterans Affairs
+								78 text va.gov
+								79 image
+						80 button (disabled) Microsoft Copilot: Your AI companion - copilot.microsoft.com ID: highlightItem
+							81 link Microsoft Copilot: Your AI companion\ncopilot.microsoft.com
+								82 text ID: _relativeDateTextField 3 days ago
+								83 text Microsoft Copilot: Your AI companion
+								84 text copilot.microsoft.com
+								85 image
+						86 container (disabled)
+			87 button Edit Description: customizations ID: customizationsPopoverButton
+	88 image ID: WindowControlShadowView._shadowImageView
+	89 toolbar
+		90 container Secondary Actions: Name: Move next
+ Target:0x0
+ Selector:(null), Name: Remove from toolbar
+ Target:0x0
+ Selector:(null)
+			91 button show sidebar Help: Show sidebar ID: SidebarButton
+			92 menu button Description: Tab Group picker ID: TabGroupPickerButton?TabGroup=
+		93 container Secondary Actions: Name: Move previous
+ Target:0x0
+ Selector:(null), Name: Move next
+ Target:0x0
+ Selector:(null), Name: Remove from toolbar
+ Target:0x0
+ Selector:(null)
+			94 container ID: BackForwardSegmentedControl
+				95 button (disabled) Go back Help: Show the previous page ID: BackButton
+				96 button (disabled) Go forward Help: Show the next page ID: ForwardButton
+		97 container Secondary Actions: Name: Move previous
+ Target:0x0
+ Selector:(null), Name: Move next
+ Target:0x0
+ Selector:(null), Name: Remove from toolbar
+ Target:0x0
+ Selector:(null)
+			98 button Show Search Menu ID: UnifiedField._magnifyingGlassButton
+			99 text field (settable, string) Description: smart search field ID: WEB_BROWSER_ADDRESS_AND_SEARCH_FIELD, Placeholder: Search or enter website name
+		100 button (disabled) Share ID: ShareButton, Secondary Actions: Name: Move previous
+ Target:0x0
+ Selector:(null), Name: Move next
+ Target:0x0
+ Selector:(null), Name: Remove from toolbar
+ Target:0x0
+ Selector:(null)
+		101 button New Tab ID: NewTabButton, Secondary Actions: Name: Move previous
+ Target:0x0
+ Selector:(null), Name: Move next
+ Target:0x0
+ Selector:(null), Name: Remove from toolbar
+ Target:0x0
+ Selector:(null)
+		102 button Tab Overview ID: TabOverviewButton, Secondary Actions: Name: Move previous
+ Target:0x0
+ Selector:(null), Name: Remove from toolbar
+ Target:0x0
+ Selector:(null)
+	103 close button
+	104 full screen button Help: this button also has an action to zoom the window, Secondary Actions: zoom the window
+	105 minimize button
+106 menu bar
+	107 Safari
+	108 File
+	109 Edit
+	110 View ID: SafariViewMenu
+	111 History
+	112 Bookmarks ID: SafariBookmarksMenu
+	113 Develop
+	114 Window ID: SafariWindowMenu
+	115 Help ID: SafariHelpMenu
+
+The focused UI element is 99 text field (settable, string) Description: smart search field ID: WEB_BROWSER_ADDRESS_AND_SEARCH_FIELD, Placeholder: Search or enter website name.

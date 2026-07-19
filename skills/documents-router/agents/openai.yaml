@@ -1,0 +1,6 @@
+interface:
+  display_name: "Document"
+  short_description: "Route document requests to the preinstalled capability"
+  default_prompt: "Use $document to create or edit a document artifact."
+policy:
+  allow_implicit_invocation: false

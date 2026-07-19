@@ -1,0 +1,4 @@
+interface:
+  display_name: "Hot or Not?"
+  short_description: "Deep-Significance Scan — “Hot or Not” (Access-Safe, Prototype-Aw"
+  default_prompt: "Use $grok-task-v3-hot-or-not on the current material."

@@ -1,0 +1,14 @@
+{
+  "Fast": {
+    "ok": false,
+    "error": "Model select missing"
+  },
+  "Expert": {
+    "ok": false,
+    "error": "Model select missing"
+  },
+  "Heavy": {
+    "ok": false,
+    "error": "Model select missing"
+  }
+}

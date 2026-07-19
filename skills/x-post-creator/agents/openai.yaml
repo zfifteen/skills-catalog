@@ -1,0 +1,4 @@
+interface:
+  display_name: "X-Post Creator"
+  short_description: "Turn ideas into X threads with visuals"
+  default_prompt: "Use $x-post-creator to turn this conversation or file into a plain-language X thread and a co-located story package in docs/x-posts/[story-name]/."

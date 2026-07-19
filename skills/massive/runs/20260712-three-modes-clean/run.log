@@ -1,0 +1,28 @@
+CLEAN RUN start
+=== BASELINE ===
+  tab_url='https://example.com/'
+  addr='https://example.com'
+=== NAV: clear address, type ONLY https://grok.com, verify, Return ===
+  after clear addr=None
+  after type addr='https://grok.com'
+  GATE PASS: address field is exact target
+  after Return tab_url='https://grok.com/' addr='https://grok.com'
+NAV_OK
+STEP0_DONE
+[00:04:04] ======== Fast ========
+[00:04:06]   nav → https://grok.com (clear then type, verify)
+[00:04:11]   addr after type='https://grok.com'
+[00:04:17]   after nav tab='https://grok.com/'
+[00:04:21]   open mode @ (1190,538) w=111.0
+[00:04:25]   menu=[]
+[00:04:26] ======== Expert ========
+[00:04:28]   nav → https://grok.com (clear then type, verify)
+[00:04:34]   addr after type='https://grok.com'
+[00:04:39]   after nav tab='https://grok.com/'
+[00:04:43]   open mode @ (1190,538) w=111.0
+[00:04:48]   menu=[]
+[00:04:49] ======== Heavy ========
+[00:04:50]   nav → https://grok.com (clear then type, verify)
+[00:04:55]   addr after type='https://grok.com'
+[00:05:01]   after nav tab='https://grok.com/'
+[00:05:05]   open mode @ (1190,538) w=111.0

@@ -1,0 +1,124 @@
+App=com.apple.Safari (pid 66661)
+Window: "Google Gemini", App: Safari.
+0 standard window Google Gemini ID: SafariWindow?IsSecure=true&UUID=CD51C7FE-A78F-4159-BDB3-EA77FC5229C5, Secondary Actions: Raise
+	1 split group
+		2 tab group
+			3 container ID: BrowserView?IsPageLoaded=true&WebViewProcessID=71666
+				4 scroll area
+					5 HTML content Google Gemini, URL: https://gemini.google.com/app
+						6 container
+							7 button Open sidebar
+							8 button Temporary chat
+							9 container Side Navigation
+								10 container Main actions menu
+									11 link [New chat](https://gemini.google.com/app)
+									12 link [Search chats](https://gemini.google.com/search)
+								13 container Additional actions menu
+									14 link [Daily brief](https://gemini.google.com/daily-brief)
+									15 link [Images](https://gemini.google.com/images)
+									16 link [Videos](https://gemini.google.com/videos)
+									17 link [Library](https://gemini.google.com/library)
+									18 link [Gems](https://gemini.google.com/gems/view)
+								19 container
+									20 link [Google Account: Dionisio Lopez (dionisio.lopez@gmail.com)](https://accounts.google.com/SignOutOptions?continue=https://gemini.google.com)
+									21 pop up button Settings
+							22 heading Conversation with Gemini Value: 1
+								23 text Conversation with Gemini
+							24 heading Where should we start? Value: 1
+								25 text Where should we start?
+							26 container
+								27 container
+									28 text entry area (settable, string) Enter a prompt for Gemini
+										29 text Ask Gemini
+										30 container (settable, string)
+									31 text entry area (settable, string)
+								32 pop up button Upload & tools
+								33 container
+									34 pop up button Open mode picker, currently Pro
+									35 menu
+										36 menu item (selected) 3.1 Flash-Lite Fastest answers
+											37 text Fastest answers
+										38 menu item 3.5 Flash All-around help
+											39 text All-around help
+										40 menu item Selected 3.1 Pro Advanced math and code
+											41 container Selected
+											42 text Advanced math and code
+										43 splitter
+										44 menu item Extended thinking Complex problem solving
+											45 text Complex problem solving
+								46 button Microphone
+	47 image ID: WindowControlShadowView._shadowImageView
+	48 toolbar
+		49 container Secondary Actions: Name: Move next
+ Target:0x0
+ Selector:(null), Name: Remove from toolbar
+ Target:0x0
+ Selector:(null)
+			50 button show sidebar Help: Show sidebar ID: SidebarButton
+			51 menu button Description: Tab Group picker ID: TabGroupPickerButton?TabGroup=
+		52 container Secondary Actions: Name: Move previous
+ Target:0x0
+ Selector:(null), Name: Move next
+ Target:0x0
+ Selector:(null), Name: Remove from toolbar
+ Target:0x0
+ Selector:(null)
+			53 container ID: BackForwardSegmentedControl
+				54 button Go back Help: Show the previous page ID: BackButton
+				55 button (disabled) Go forward Help: Show the next page ID: ForwardButton
+		56 container Secondary Actions: Name: Move previous
+ Target:0x0
+ Selector:(null), Name: Move next
+ Target:0x0
+ Selector:(null), Name: Remove from toolbar
+ Target:0x0
+ Selector:(null)
+			57 button Page Menu ID: AssistantButton
+			58 button (disabled) Add page to Reading List ID: OneStepBookmarkingButton
+			59 text field (settable, string) Description: smart search field ID: WEB_BROWSER_ADDRESS_AND_SEARCH_FIELD, Value: https://gemini.google.com/app
+			60 button Reload this page ID: ReloadButton
+		61 button Share ID: ShareButton, Secondary Actions: Name: Move previous
+ Target:0x0
+ Selector:(null), Name: Move next
+ Target:0x0
+ Selector:(null), Name: Remove from toolbar
+ Target:0x0
+ Selector:(null)
+		62 button New Tab ID: NewTabButton, Secondary Actions: Name: Move previous
+ Target:0x0
+ Selector:(null), Name: Move next
+ Target:0x0
+ Selector:(null), Name: Remove from toolbar
+ Target:0x0
+ Selector:(null)
+		63 button Tab Overview ID: TabOverviewButton, Secondary Actions: Name: Move previous
+ Target:0x0
+ Selector:(null), Name: Remove from toolbar
+ Target:0x0
+ Selector:(null)
+	64 tab group Description: Tab bar, 2 tabs ID: TabBar?isSeparate=false
+		65 tab Prime Gap Structure: GWR and Modular Lemmas - Grok ID: TabBarTab?isPinned=false&isNarrow=false&isActive=false, Value: off, Secondary Actions: Name:close tab
+ Target:0x903c7d180
+ Selector:_close Button Clicked:
+			66 image ID: FaviconImageView
+			67 text ID: UnifiedTabBarButton._titleTextField Prime Gap Structure: GWR and Modular Lemmas - Grok
+		68 tab Google Gemini Help: To interact with the items in this button, press Control-Option-Shift-Down Arrow. ID: TabBarTab?isPinned=false&isNarrow=false&isActive=true, Value: on, Secondary Actions: Name:close tab
+ Target:0x903c7aa00
+ Selector:_close Button Clicked:
+			69 image ID: FaviconImageView
+			70 text ID: UnifiedTabBarButton._titleTextField Google Gemini
+	71 close button
+	72 full screen button Help: this button also has an action to zoom the window, Secondary Actions: zoom the window
+	73 minimize button
+74 menu bar
+	75 Safari
+	76 File
+	77 Edit
+	78 View ID: SafariViewMenu
+	79 History
+	80 Bookmarks ID: SafariBookmarksMenu
+	81 Develop
+	82 Window ID: SafariWindowMenu
+	83 Help ID: SafariHelpMenu
+
+The focused UI element is 36 menu item (selected) 3.1 Flash-Lite Fastest answers.

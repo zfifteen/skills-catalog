@@ -1,0 +1,314 @@
+Toggle Sidebar
+
+F
+
+
+Prime Gap Structure<a href="https://github.com/zfifteen/prime-gap-structure" target="_blank" rel="noopener noreferrer nofollow"></a>: the gap interior is an ordered divisor-count field; GWR selects the leftmost min-tau witness; F(n)=(1-tau(n)/2) log n. The Twin-Prime Resonance / GWR Super-Signal universal implication is invalidated (July 2026) while the modular lemma z(w)>=4 iff 30|w remains. Task: give a precise 250-400 word technical summary of (1) what is currently proved, (2) what was withdrawn and why that distinction matters for future work, (3) one rigorous next experiment that stays inside proved objects. Use epistemic tags where helpful. No probabilistic gap heuristics.
+
+
+
+Thought for 1m 7s
+Prime Gap Structure: current proved core, the July 2026 withdrawal, and a strictly internal next step.
+The gap interior 
+(
+p
+,
+q
+)
+(p,q) is an ordered divisor-count field: each integer 
+n
+n carries its exact 
+τ
+(
+n
+)
+τ(n). The next prime is defined deterministically by the Next-Prime Rule [PROVED]:
+q
+=
+min
+⁡
+{
+n
+>
+p
+:
+τ
+(
+n
+)
+=
+2
+}
+.
+q=min{n>p:τ(n)=2}.
+Inside any nonempty interior the Gap Winner Rule (GWR) [PROVED, PROOF.md and LEFTMOST_MINIMUM_DIVISOR_RULE.md] selects the leftmost position 
+w
+w attaining
+min
+⁡
+{
+τ
+(
+n
+)
+:
+p
+<
+n
+<
+q
+}
+min{τ(n):p<n<q}
+as the unique maximizer of the comparison function
+F
+(
+n
+)
+=
+(
+1
+−
+τ
+(
+n
+)
+/
+2
+)
+log
+⁡
+n
+F(n)=(1−τ(n)/2)logn
+(equivalently the raw-
+Z
+Z maximizer 
+Z
+(
+n
+)
+=
+n
+1
+−
+τ
+(
+n
+)
+/
+2
+Z(n)=n 
+1−τ(n)/2
+ , or minimizer of the zero-excess coordinate 
+E
+(
+n
+)
+=
+(
+τ
+(
+n
+)
+/
+2
+−
+1
+)
+log
+⁡
+n
+E(n)=(τ(n)/2−1)logn).
+What is currently proved
+GWR / Interior Maximizer [PROVED]: the leftmost min-
+τ
+τ carrier is exactly the maximizer of 
+F
+(
+n
+)
+F(n) among all interior composites.
+No-Later-Simpler-Composite Theorem [PROVED, zero violations to 
+10
+18
+10 
+18
+ ]: no composite after 
+w
+w possesses strictly smaller divisor count.
+Universal Bounded Compression [PROVED]: the GWR witness satisfies
+w
+−
+p
+≤
+max
+⁡
+(
+64
+,
+⌈
+0.5
+(
+log
+⁡
+q
+)
+2
+⌉
+)
+.
+w−p≤max(64,⌈0.5(logq) 
+2
+ ⌉).
+Prime-Square Proximity Theorem [PROVED, 2026-07-05]: the same bound holds when the witness is a prime square (
+τ
+(
+w
+)
+=
+3
+τ(w)=3).
+Modular Lemma [REMAINS VALID]: 
+z
+(
+w
+)
+≥
+4
+  
+⟺
+  
+30
+∣
+w
+z(w)≥4⟺30∣w, where 
+z
+(
+w
+)
+z(w) counts zeros in the remainder vector of 
+w
+w modulo the fixed primorial bases 
+{
+2
+,
+3
+,
+5
+,
+7
+,
+30
+,
+210
+,
+2310
+}
+{2,3,5,7,30,210,2310}.
+What was withdrawn and why the distinction matters
+The Twin-Prime Resonance / GWR Super-Signal universal implication [INVALIDATED 9 Jul 2026, commit 95cd67e] asserted that 
+z
+(
+w
+)
+≥
+4
+z(w)≥4 forces gap size 
+g
+=
+2
+g=2. Counterexamples (e.g., 
+p
+=
+17,666,309
+p=17,666,309, 
+w
+=
+17,666,310
+≡
+0
+(
+m
+o
+d
+30
+)
+w=17,666,310≡0(mod30), 
+z
+(
+w
+)
+=
+4
+z(w)=4, 
+g
+=
+8
+g=8; likewise 
+p
+=
+22,284,029
+p=22,284,029) demonstrate that the modular condition can hold while later interior composites tie 
+τ
+(
+w
+)
+τ(w) without violating GWR selection. The packaging that treated the modular fact as a corollary forcing twin gaps is therefore withdrawn.
+The distinction is decisive for future work: the modular lemma is pure local arithmetic on a fixed finite set of moduli and survives intact; the universal forcing claim was an over-extrapolation from GWR selection plus that lemma. Retaining only what is proved prevents downstream theorems (conditional densities, RSA-ladder arguments, or resonance-based sieves) from inheriting a non-universal pattern. Future analyses may still apply the modular filter 
+z
+(
+w
+)
+≥
+4
+z(w)≥4 safely to GWR witnesses for classification or conditional study, but must not assert gap-size determination from it.
+One rigorous next experiment inside proved objects
+Run a fully deterministic, machine-reproducible audit over every consecutive prime pair with next-prime 
+q
+≤
+10
+9
+q≤10 
+9
+ : (i) compute exact sequential 
+τ
+(
+n
+)
+τ(n) to recover 
+q
+q and the interior minimum divisor count together with its leftmost occurrence 
+w
+w (GWR); (ii) verify that 
+F
+F attains its strict interior maximum at this 
+w
+w; (iii) confirm no later composite has 
+τ
+<
+τ
+(
+w
+)
+τ<τ(w) (No-Later-Simpler-Composite); (iv) check adherence to the proved compression bound. Emit per-gap certificates (or an aggregate zero-violation log) plus a machine-readable list of all GWR witnesses satisfying the surviving modular condition 
+z
+(
+w
+)
+≥
+4
+z(w)≥4.
+This experiment operates exclusively on the proved Next-Prime Rule, GWR/Interior Maximizer, No-Later-Simpler-Composite, Bounded Compression, Prime-Square Proximity, and the intact modular lemma. It generates independent, auditable verification data on fresh ground without invoking the withdrawn universal implication, thereby tightening the finite-certified envelope around the proved structural core.
+
+
+
+
+
+
+Explore modular arithmetic properties
+Investigate Cramer's conjecture bounds
+Reduce word count to 250
+
+
+
+
+Expert

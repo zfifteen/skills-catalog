@@ -1,0 +1,25 @@
+{
+  "final": "PASS",
+  "modes": {
+    "Fast": {
+      "ok": true,
+      "chars": 1185,
+      "words": 203,
+      "path": "/Users/velocityworks/.grok/skills/massive/runs/20260712-eyes-run/fast-response.txt"
+    },
+    "Expert": {
+      "ok": true,
+      "chars": 4860,
+      "words": 834,
+      "path": "/Users/velocityworks/.grok/skills/massive/runs/20260712-eyes-run/expert-response.txt"
+    },
+    "Heavy": {
+      "ok": true,
+      "chars": 7984,
+      "words": 1271,
+      "path": "/Users/velocityworks/.grok/skills/massive/runs/20260712-eyes-run/heavy-response.txt"
+    }
+  },
+  "finished": "2026-07-12T04:19:56.564413+00:00",
+  "notes": "No address-bar thrash; Home page link between modes; real cursor mode select"
+}

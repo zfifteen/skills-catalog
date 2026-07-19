@@ -1,0 +1,4 @@
+interface:
+  display_name: "Disingenuous"
+  short_description: "Analyze the provided comment for instances of disingenuous argum"
+  default_prompt: "Use $grok-task-v3-disingenuous on the current material."

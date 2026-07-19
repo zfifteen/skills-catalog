@@ -1,0 +1,7 @@
+**Prime Gap Structure (PGS)** studies the integers between consecutive primes p and q = next_prime(p) as an **ordered divisor-count field**: the sequence d(n) for n = p+1 to q-1, where d(n) is the number of positive divisors of n.
+
+The **Gap Winner Rule (GWR)** states that the leftmost composite carrying the minimal d(n) in this interior (the Gap Winner / selected interior witness) is the raw-Z maximizer (via DNI: E(n) = (d(n)/2 - 1) ln n, Z(n) = e^{-E(n)} with primes at Z=1).
+
+**No-Later-Simpler-Composite Theorem**: Once the minimal d(n) appears, no composite with smaller d(·) occurs later in the gap (verified to 10^18 with zero violations).
+
+See https://github.com/zfifteen/prime-gap-structure. (98 words)

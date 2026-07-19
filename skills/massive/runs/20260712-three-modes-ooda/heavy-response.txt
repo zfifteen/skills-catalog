@@ -1,0 +1,34 @@
+**Structured Technical Brief: Prime Gap Structure (PGS) Program (zfifteen/prime-gap-structure)**
+
+**(A) Invariant Inventory**  
+The PGS framework rests on a tight set of deterministic, local arithmetic invariants derived from the divisor-count field τ(n) ≡ d(n) inside every prime gap (p, q) with nonempty interior I = {p+1, …, q−1}. These are proved in PROOF.md via ordering lemmas, tail closures, finite-base certificates, and analytic residuals; all hold universally without probabilistic or global-number-theoretic assumptions.
+
+- **Direct Next-Prime Rule**: q = min{n > p : τ(n) = 2}. Trivial by definition of primality; the endpoint is exactly the first return to τ = 2 after p.  
+- **Gap Winner Rule (GWR) / Universal Interior Maximizer**: Let w be the leftmost n ∈ I attaining min{τ(m) : m ∈ I}. Then w uniquely maximizes F(n) = (1 − τ(n)/2) log n (equivalently the raw-Z maximizer under the Divisor Normalization Identity E(n) = (τ(n)/2 − 1) ln n, Z(n) = e^{−E(n)} with primes at Z = 1). Proved by (i) Ordered Comparison Lemma (a < b and τ(a) ≤ τ(b) ⇒ F(a) > F(b) for composites), (ii) right-tail closure (every later m has τ(m) ≥ τ(w) ⇒ F(m) ≤ F(w)), and (iii) left-tail closure via Witness Threshold Lemma, Short Divisor-Average Lemma, and prime-square special case. Finite base gwr_finite_base_v1 certifies all gaps with p < 5×10^9 (220 M gaps, zero failures); residuals k ≤ 128 eliminated analytically.  
+- **No-Later-Simpler-Composite (NLSC) Theorem**: Once the minimal τ(w) appears, no later composite in I has τ ≤ τ(w). This is the right-tail half of GWR; computationally zero violations through 10^18 (assert_results.tsv, full surface enforcement Jul 11 2026).  
+- **Universal Bounded Compression at Cramér Scale**: w − p ≤ max(64, ⌈0.5 ⋅ (log q)²⌉) for every nonempty gap. Proved by finite base bounded_compression_base_v1 (q < e^16, zero failures) plus residual elimination tables (high-τ candidates ruled out by first-d=4 windows and divisor-sum bounds). Matches Cramér envelope exactly on witness position, not gap length.  
+- **Prime-Square Proximity Theorem** (proved 2026-07-05): If w = r² (r prime, τ(w) = 3), then r² − p obeys the same compression bound; reductio via full-row activation of factors m ≤ ⌊C(q)/2⌋, partition into L/R sets, and rough-number injectivity yields modulus-link collision otherwise.  
+
+These invariants establish a fully ordered, first-arrival divisor-count hierarchy inside every gap; the interior is never “empty” or random.
+
+**(B) Boundary of What Is NOT Claimed**  
+PGS is deliberately local and structural; it draws sharp, adversarial boundaries.  
+
+- **No Riemann Hypothesis (RH)**: A separate docs/rh/ reading path sketches an analytic bridge (via H(n) = log n + E(n) or similar), but the core theorems and PROOF.md explicitly disclaim any RH derivation or use. All proofs are elementary divisor-arithmetic plus explicit bounds; no ζ(s) zeros or L-functions appear.  
+- **No classical Cramér raw-gap-size bound**: The O((log p)²) compression applies strictly to the selected witness offset w − p, not to the full gap length q − p. Post-witness composites can (and do) continue arbitrarily far before the next τ = 2 hit. Classical Cramér conjecture (max gaps ∼ (log p_n)²) remains untouched; PGS supplies internal deterministic scaffolding but no global envelope on gap extremes.  
+- **No universal GWR Super-Signal / Twin-Prime Resonance**: The modular claim “z(w) ≥ 4 ⇒ 30 | w and g = 2” was falsified July 9 2026 with explicit counterexample certificates (e.g., gaps of size 8 carrying z = 4 at large p). Only local modular relations survive.  
+- No probabilistic models, no PNT-derived heuristics, no infinitude claims, and no deterministic closed-form prime generator beyond the trivial scan-to-τ=2 rule.
+
+**(C) Where a Sophisticated Reader Might Still Smuggle Classical Random-Gap Thinking**  
+Even after absorbing the deterministic invariants, a reader steeped in Cramér–Granville–Maier heuristics can unconsciously re-inject randomness at three concrete seams:  
+
+1. **Post-witness tail as “random sieve”**: GWR and NLSC fix the minimizer w and forbid later simpler composites, but the remaining walk from w+1 to q−1 is still a run of composites until the first τ = 2. One may mentally model the waiting time as independent Poisson arrivals with density 1/log n, smuggling the full Cramér gap-size distribution despite the ordered pre-witness structure.  
+2. **Divisor-count minima as “effective randomness proxy”**: Treating the leftmost argmin τ(n) as merely an early hit in a random d(n) ∼ log-log process (Mertens-type) instead of the arithmetic necessity proved by the Ordered Comparison + threshold lemmas. This collapses the deterministic leftmost-first-arrival law back into a probabilistic bias.  
+3. **Cramér-scale bound misread as full-gap envelope**: The witness compression is exactly at the classical Cramér scale, so one may quietly assume the entire gap q − p inherits the same O((log p)²) cap, ignoring that bounded compression leaves an unbounded (though structured) post-witness composite run. Adversarially, this is the most seductive smuggling route: the math looks “Cramér-like” yet is purely divisor-driven.
+
+**(D) Single Highest-Leverage Proof or Verification Task for the Next 30 Days**  
+Complete the Lean-4 formalization (lean-4/ directory, currently partial) of the analytic closures in PROOF.md—specifically the Witness Threshold Lemma, Short Divisor-Average Lemma, prime-square reductio counting (rough-number partition and row activation), and all residual-k=128 elimination tables—then machine-check every finite-base certificate (gwr_finite_base_v1, bounded_compression_base_v1) against an independent sieve implementation up to at least 10^10.  
+
+This single task eliminates the only remaining human-audit surface (the split between exhaustive bases and analytic arguments), upgrades NLSC/GWR from “computationally verified to 10^18 + sketch” to fully machine-checked universality, and directly pressures any hidden edge-case in high-τ or square-branch residuals. It is adversarial by design: if a counterexample or off-by-one appears under formal scrutiny, the entire bounded-compression claim collapses; if it passes, PGS becomes the first fully verified deterministic interior model at Cramér scale. Target completion by 2026-08-11; reproduction scripts already exist in proof-enhancements/.  
+
+(Word count: 712)

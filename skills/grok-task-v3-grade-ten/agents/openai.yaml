@@ -1,0 +1,4 @@
+interface:
+  display_name: "Grade Ten"
+  short_description: "Use grade 10 english."
+  default_prompt: "Use $grok-task-v3-grade-ten on the current material."

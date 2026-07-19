@@ -1,0 +1,7 @@
+window pos=0,34
+window size=1728,1083
+entire contents count=72
+AXPopUpButton|F|| pos=9,1059 size=47,47
+AXPopUpButton|Attach|Attach| pos=447,515 size=47,47
+AXPopUpButton|Model select|Model select| pos=1116,515 size=129,47
+found=3
