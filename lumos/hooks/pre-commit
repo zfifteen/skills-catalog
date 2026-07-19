@@ -1,0 +1,4 @@
+#!/bin/sh
+# Lumos auto-save hook for pre-commit
+echo "Lumos: Capturing workspace state..."
+python3 -m lumos.cli save
